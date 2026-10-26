@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What dB threshold should you use to detect silences? | Auto-dérush</title>
+<meta name="description" content="Background noise, voice level, detection threshold: how to set the decibel threshold to cut silences without clipping words.">
+<link rel="canonical" href="https://auto-derush.github.io/en/guides/choose-silence-threshold-db/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/choisir-le-seuil-en-db/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/choose-silence-threshold-db/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/choose-silence-threshold-db/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What dB threshold should you use to detect silences? | Auto-dérush">
+<meta property="og:description" content="Background noise, voice level, detection threshold: how to set the decibel threshold to cut silences without clipping words.">
+<meta property="og:url" content="https://auto-derush.github.io/en/guides/choose-silence-threshold-db/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What dB threshold should you use to detect silences?","description":"Background noise, voice level, detection threshold: how to set the decibel threshold to cut silences without clipping words.","inLanguage":"en","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/en/guides/choose-silence-threshold-db/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/?lang=en">Auto-<span>dérush</span></a>
+  <nav><a href="/en/guides/">Guides</a><a class="lang" href="/guides/choisir-le-seuil-en-db/">Français</a><a class="btn small" href="/?lang=en#tarif">Try it</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/en/guides/">← All guides</a>
+<h1>What dB threshold should you use to detect silences?</h1>
+<p class="meta">2 min read</p>
+<p class="intro">Every silence-removal tool relies on a threshold: below this volume, sound is treated as silence. Set it wrong and it either clips words or lets silences through.</p>
+<h2>What the threshold measures</h2>
+<p>Volume is measured in decibels (dB), with 0 dB as the maximum. The more negative the number, the quieter the sound. In a typical voice recording:</p>
+<ul><li>the <strong>background noise</strong> of a quiet room is often between -60 and -50 dB;</li><li>the <strong>voice</strong> usually sits between -25 and -10 dB.</li></ul>
+<p>The threshold has to go between the two.</p>
+<h2>Too high, too low</h2>
+<ul><li><strong>Threshold too high</strong> (close to the voice, e.g. -20 dB): quiet syllables and sentence endings fall below it and get cut.</li><li><strong>Threshold too low</strong> (close to the noise, e.g. -58 dB): background noise is mistaken for speech, and nothing gets cut.</li></ul>
+<h2>The rule of thumb</h2>
+<p>Put the threshold closer to the noise than to the voice: about a third of the way up from the noise. With background noise at -55 dB and voice at -19 dB, the gap is 36 dB: a threshold around -43 dB works well.</p>
+<aside class="tip">That's exactly what Auto-dérush's <strong>Analyze selection</strong> button does: it measures the noise and voice of your clip, then suggests this threshold. One click on <strong>Apply</strong> sets it.</aside>
+<h2>Reading the curve</h2>
+<p>After the analysis, Auto-dérush shows the clip's volume curve, with the threshold as a dashed line and the parts that will be cut in red. Clicking the curve moves Premiere's playhead there: press Space to listen and check.</p>
+<h2>When the contrast is too low</h2>
+<p>If voice and background noise are too close (wind, air conditioning, crowd), no threshold can separate them cleanly. The panel tells you. In that case, clean the audio first (noise reduction in Audition, or <strong>Enhance Speech</strong>), then run the analysis again.</p>
+<h2>The other settings that matter</h2>
+<ul><li><strong>Minimum silence length</strong>: a shorter pause is kept, even below the threshold.</li><li><strong>Padding before and after</strong>: a little silence is kept around speech.</li><li><strong>Minimum kept segment</strong>: an isolated click or cough shorter than this is removed.</li></ul>
+<div class="cta"><h2>Do it in one click</h2><p>Auto-dérush cuts the silences from your footage in Premiere Pro, keeps video and mic in sync, and edits multicam podcasts.</p><a class="btn" href="/?lang=en#tarif">Start your 7-day free trial</a><p class="trial">Then €5 a month, cancel anytime.</p></div>
+<section class="related"><h2>Read next</h2><div class="cards"><a class="card" href="/en/guides/ripple-delete-multiple-tracks/"><h3>Ripple delete across multiple tracks without knocking audio out of sync</h3><p>Why Ripple Delete sometimes shifts the mic against the video in Premiere Pro, and how to cut several tracks cleanly.</p></a><a class="card" href="/en/guides/edit-multicam-podcast-premiere-pro/"><h3>How to edit a multicam video podcast in Premiere Pro, automatically</h3><p>Two guests, three cameras, separate mics: how to cut the silences and automatically show the camera of whoever is speaking.</p></a><a class="card" href="/en/guides/keep-external-mic-in-sync/"><h3>How to cut a video with an external mic without losing sync</h3><p>Camera and lavalier recorded separately: how to sync, cut silences and keep audio perfectly aligned in Premiere Pro.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro is a trademark of Adobe, not affiliated with this product.<br><span class="legal"><a href="/en/legal-notice/">Legal notice</a> · <a href="/en/terms/">Subscription and usage terms</a></span></div></footer>
+</body>
+</html>

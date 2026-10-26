@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automatically cut crew voices from behind the camera | Auto-dérush</title>
+<meta name="description" content="Interviewer questions, camera operator comments: how to detect and cut them automatically using the lavalier mic.">
+<link rel="canonical" href="https://auto-derush.github.io/en/guides/remove-crew-voices-behind-camera/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/couper-la-voix-de-l-equipe-derriere-la-camera/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/remove-crew-voices-behind-camera/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/remove-crew-voices-behind-camera/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Automatically cut crew voices from behind the camera | Auto-dérush">
+<meta property="og:description" content="Interviewer questions, camera operator comments: how to detect and cut them automatically using the lavalier mic.">
+<meta property="og:url" content="https://auto-derush.github.io/en/guides/remove-crew-voices-behind-camera/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Automatically cut crew voices from behind the camera","description":"Interviewer questions, camera operator comments: how to detect and cut them automatically using the lavalier mic.","inLanguage":"en","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/en/guides/remove-crew-voices-behind-camera/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/?lang=en">Auto-<span>dérush</span></a>
+  <nav><a href="/en/guides/">Guides</a><a class="lang" href="/guides/couper-la-voix-de-l-equipe-derriere-la-camera/">Français</a><a class="btn small" href="/?lang=en#tarif">Try it</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/en/guides/">← All guides</a>
+<h1>Automatically cut crew voices from behind the camera</h1>
+<p class="meta">2 min read</p>
+<p class="intro">In interviews or field shoots, you often hear the crew: an off-camera question, a &quot;that's good&quot; from the camera operator. Removing them by hand means listening to everything.</p>
+<h2>The principle: compare two mics</h2>
+<p>The speaker wears a lavalier: their voice is loud and close in it. The crew is far from that mic but well picked up by the camera mic. Comparing the two tracks tells you who is talking:</p>
+<ul><li>loud voice in the lavalier → it's the speaker, keep it;</li><li>voice louder in the camera mic → it's someone else, cut it.</li></ul>
+<h2>The manual method</h2>
+<p>Listen to the whole clip, find every crew interjection, cut at the start and end, then ripple delete. On a long interview, it's tedious and easy to miss some.</p>
+<h2>With Auto-dérush</h2>
+<ol><li>Choose the lavalier as the <strong>reference track</strong>.</li><li>Check <strong>Cut other voices</strong>.</li><li>Also select the ambient track (the camera audio, for example).</li><li>Click <strong>Analyze selection</strong>: passages detected as &quot;other voice&quot; show up in orange on the curve.</li><li>Click <strong>Cut silences</strong>.</li></ol>
+<p>The panel smooths the difference between the mics over 300 ms, then automatically splits it into two groups: the speaker and everyone else. &quot;Other voice&quot; moments are cut like silences.</p>
+<h3>Adjusting sensitivity</h3>
+<ul><li>Some of the speaker's sentences get cut? Move <strong>Other-voice sensitivity</strong> to the left.</li><li>Crew voices remain? Move it to the right.</li></ul>
+<aside class="tip">If both mics pick up the same thing (less than 6 dB apart on average), the panel cuts nothing more and tells you: the separation wouldn't be reliable.</aside>
+<div class="cta"><h2>Do it in one click</h2><p>Auto-dérush cuts the silences from your footage in Premiere Pro, keeps video and mic in sync, and edits multicam podcasts.</p><a class="btn" href="/?lang=en#tarif">Start your 7-day free trial</a><p class="trial">Then €5 a month, cancel anytime.</p></div>
+<section class="related"><h2>Read next</h2><div class="cards"><a class="card" href="/en/guides/breaths-keep-or-cut/"><h3>Breaths in editing: keep them or cut them?</h3><p>Cutting every breath makes a voice sound robotic, keeping them all slows the pace. How to choose, and how to handle them automatically.</p></a><a class="card" href="/en/guides/youtube-jump-cuts-premiere-pro/"><h3>How to make YouTube-style jump cuts in Premiere Pro</h3><p>The fast talking-head style of YouTubers relies on jump cuts. How to make them quickly, and how to make the jumps look good.</p></a><a class="card" href="/en/guides/silence-removal-tools-compared/"><h3>Removing silences in Premiere Pro: which tool should you choose?</h3><p>Premiere's text-based editing, extensions like AutoCut or Auto-dérush: what each option does to cut silences, and who it's for.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro is a trademark of Adobe, not affiliated with this product.<br><span class="legal"><a href="/en/legal-notice/">Legal notice</a> · <a href="/en/terms/">Subscription and usage terms</a></span></div></footer>
+</body>
+</html>

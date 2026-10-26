@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monter un podcast vidéo multicam dans Premiere Pro, automatiquement | Auto-dérush</title>
+<meta name="description" content="Deux invités, trois caméras, des micros séparés : comment couper les silences et afficher automatiquement la caméra de celui qui parle.">
+<link rel="canonical" href="https://auto-derush.github.io/guides/monter-un-podcast-multicam-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/monter-un-podcast-multicam-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/edit-multicam-podcast-premiere-pro/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/edit-multicam-podcast-premiere-pro/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Monter un podcast vidéo multicam dans Premiere Pro, automatiquement | Auto-dérush">
+<meta property="og:description" content="Deux invités, trois caméras, des micros séparés : comment couper les silences et afficher automatiquement la caméra de celui qui parle.">
+<meta property="og:url" content="https://auto-derush.github.io/guides/monter-un-podcast-multicam-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Monter un podcast vidéo multicam dans Premiere Pro, automatiquement","description":"Deux invités, trois caméras, des micros séparés : comment couper les silences et afficher automatiquement la caméra de celui qui parle.","inLanguage":"fr","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/guides/monter-un-podcast-multicam-premiere-pro/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/">Auto-<span>dérush</span></a>
+  <nav><a href="/guides/">Guides</a><a class="lang" href="/en/guides/edit-multicam-podcast-premiere-pro/">English</a><a class="btn small" href="/#tarif">Essayer</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/guides/">← Tous les guides</a>
+<h1>Monter un podcast vidéo multicam dans Premiere Pro, automatiquement</h1>
+<p class="meta">2 min de lecture</p>
+<p class="intro">Un podcast filmé à plusieurs caméras, c'est des heures de montage : couper les silences, puis choisir à chaque phrase la bonne caméra. Les deux peuvent être automatisés.</p>
+<h2>Le montage classique</h2>
+<p>Premiere Pro propose le montage multicaméra natif : on crée une séquence source multicaméra, puis on change d'angle en direct pendant la lecture. C'est efficace, mais il faut tout regarder en temps réel, et couper les silences reste une étape à part.</p>
+<h2>L'idée : chaque micro dit qui parle</h2>
+<p>Dans un podcast, chaque intervenant a son propre micro. À chaque instant, le micro le plus fort indique qui parle. Il suffit donc d'analyser les micros pour savoir quelle caméra montrer.</p>
+<h2>Avec Auto-dérush</h2>
+<ol><li>Placez les caméras sur des pistes vidéo (V1, V2, V3…) et les micros sur des pistes audio, le tout synchronisé.</li><li>Cochez <strong>Montage multicam (podcast)</strong> dans le panneau.</li><li>Donnez un rôle à chaque piste : « Intervenant 1 », « Intervenant 2 », « Plan large » pour les vidéos, « Micro intervenant 1 », « Micro intervenant 2 » pour l'audio.</li><li>Sélectionnez tous les clips et cliquez sur <strong>Dérush</strong>.</li></ol>
+<p>Le panneau coupe d'abord les silences (quand personne ne parle), puis découpe la séquence à chaque changement d'intervenant et active la caméra de celui qui parle. Le son n'est jamais coupé.</p>
+<h3>Les réglages qui donnent un montage naturel</h3>
+<ul><li><strong>Durée minimale d'un plan</strong> (2 s par défaut) : un « oui » ou un « hmm » ne fait pas changer de caméra.</li><li><strong>Plan large quand plusieurs parlent</strong> : si deux micros sont forts à moins de 6 dB l'un de l'autre, le plan large est montré.</li><li><strong>Plan large après X secondes</strong> : pour varier et montrer les réactions quand on reste longtemps sur la même personne.</li><li><strong>Plan large sur grosse coupe</strong> : masque le saut d'image quand un long silence a été retiré au milieu d'une phrase.</li></ul>
+<aside class="tip">Ce n'est pas une séquence multicam native : chaque plan est un morceau de clip sur sa piste, les autres caméras étant désactivées. Vous pouvez donc retoucher n'importe quel plan à la main ensuite.</aside>
+<h2>Résultat</h2>
+<p>Un premier montage complet, silences coupés et caméras choisies, en quelques secondes. Il reste à affiner quelques plans à la main au lieu de tout monter.</p>
+<div class="cta"><h2>Faites-le en un clic</h2><p>Auto-dérush coupe les blancs de vos rushs dans Premiere Pro, garde la vidéo et le micro synchronisés et monte vos podcasts multicam.</p><a class="btn" href="/#tarif">Essai gratuit de 7 jours</a><p class="trial">Puis 5 € par mois, sans engagement.</p></div>
+<section class="related"><h2>À lire aussi</h2><div class="cards"><a class="card" href="/guides/garder-micro-externe-synchronise/"><h3>Couper une vidéo avec un micro externe sans perdre la synchro</h3><p>Caméra et micro-cravate enregistrés séparément : comment synchroniser, couper les silences et garder le son parfaitement aligné dans Premiere Pro.</p></a><a class="card" href="/guides/couper-la-voix-de-l-equipe-derriere-la-camera/"><h3>Couper automatiquement la voix de l'équipe derrière la caméra</h3><p>Questions de l'intervieweur, remarques du cadreur : comment les repérer et les couper automatiquement grâce au micro-cravate.</p></a><a class="card" href="/guides/respirations-garder-ou-couper/"><h3>Respirations au montage : faut-il les garder ou les couper ?</h3><p>Couper toutes les respirations rend une voix robotique, toutes les garder ralentit le rythme. Comment choisir, et comment les traiter automatiquement.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro est une marque d'Adobe, sans lien avec ce produit.<br><span class="legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgv/">Conditions d'abonnement et d'utilisation</a></span></div></footer>
+</body>
+</html>

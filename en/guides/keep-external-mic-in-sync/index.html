@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to cut a video with an external mic without losing sync | Auto-dérush</title>
+<meta name="description" content="Camera and lavalier recorded separately: how to sync, cut silences and keep audio perfectly aligned in Premiere Pro.">
+<link rel="canonical" href="https://auto-derush.github.io/en/guides/keep-external-mic-in-sync/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/garder-micro-externe-synchronise/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/keep-external-mic-in-sync/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/keep-external-mic-in-sync/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to cut a video with an external mic without losing sync | Auto-dérush">
+<meta property="og:description" content="Camera and lavalier recorded separately: how to sync, cut silences and keep audio perfectly aligned in Premiere Pro.">
+<meta property="og:url" content="https://auto-derush.github.io/en/guides/keep-external-mic-in-sync/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to cut a video with an external mic without losing sync","description":"Camera and lavalier recorded separately: how to sync, cut silences and keep audio perfectly aligned in Premiere Pro.","inLanguage":"en","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/en/guides/keep-external-mic-in-sync/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/?lang=en">Auto-<span>dérush</span></a>
+  <nav><a href="/en/guides/">Guides</a><a class="lang" href="/guides/garder-micro-externe-synchronise/">Français</a><a class="btn small" href="/?lang=en#tarif">Try it</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/en/guides/">← All guides</a>
+<h1>How to cut a video with an external mic without losing sync</h1>
+<p class="meta">2 min read</p>
+<p class="intro">Camera audio is rarely good, so voice gets recorded on a lavalier or a separate recorder. The challenge is keeping both aligned through the whole edit.</p>
+<h2>1. Sync at the start</h2>
+<ul><li>Put the video and the mic file one above the other.</li><li>Select both, right-click &gt; <strong>Synchronize</strong> &gt; <strong>Audio</strong>. Premiere lines up the waveforms.</li><li>Cut or mute the camera's scratch audio if you're not using it.</li><li>Right-click &gt; <strong>Link</strong>: video and mic now move together.</li></ul>
+<h2>2. Cut without drifting</h2>
+<p>Drift happens when you cut one track and not the other. To avoid it:</p>
+<ul><li>cut with <code>Ctrl + Shift + K</code> (all tracks);</li><li>ripple delete pieces that contain both the video and the audio;</li><li>avoid clips overlapping on other tracks during the rough cut.</li></ul>
+<h2>3. Let automation do it</h2>
+<p>With Auto-dérush, select the video <strong>and</strong> the mic, then click <strong>Cut silences</strong>. Every selected track is cut on the same frames, then moved together. Sync doesn't budge, even with 200 cuts.</p>
+<h3>Which track is used for detection?</h3>
+<p>By default, the panel listens to the mix of <strong>unmuted tracks</strong>, that is, what you hear. You can also pick a specific <strong>reference track</strong> (A1, A2…), even if it's muted: handy for detecting on the lavalier while also cutting the video and scratch audio.</p>
+<aside class="tip">If every selected audio track is muted, nothing is cut and the panel tells you: you can't detect silences in sound you can't hear.</aside>
+<h2>4. Check</h2>
+<p>After the cut, play a few random passages while watching the lips. If sync was right before, it's right after: cuts land on whole frames.</p>
+<div class="cta"><h2>Do it in one click</h2><p>Auto-dérush cuts the silences from your footage in Premiere Pro, keeps video and mic in sync, and edits multicam podcasts.</p><a class="btn" href="/?lang=en#tarif">Start your 7-day free trial</a><p class="trial">Then €5 a month, cancel anytime.</p></div>
+<section class="related"><h2>Read next</h2><div class="cards"><a class="card" href="/en/guides/remove-crew-voices-behind-camera/"><h3>Automatically cut crew voices from behind the camera</h3><p>Interviewer questions, camera operator comments: how to detect and cut them automatically using the lavalier mic.</p></a><a class="card" href="/en/guides/breaths-keep-or-cut/"><h3>Breaths in editing: keep them or cut them?</h3><p>Cutting every breath makes a voice sound robotic, keeping them all slows the pace. How to choose, and how to handle them automatically.</p></a><a class="card" href="/en/guides/youtube-jump-cuts-premiere-pro/"><h3>How to make YouTube-style jump cuts in Premiere Pro</h3><p>The fast talking-head style of YouTubers relies on jump cuts. How to make them quickly, and how to make the jumps look good.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro is a trademark of Adobe, not affiliated with this product.<br><span class="legal"><a href="/en/legal-notice/">Legal notice</a> · <a href="/en/terms/">Subscription and usage terms</a></span></div></footer>
+</body>
+</html>

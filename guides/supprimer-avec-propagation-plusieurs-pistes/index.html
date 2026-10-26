@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supprimer avec propagation sur plusieurs pistes sans désynchroniser le son | Auto-dérush</title>
+<meta name="description" content="Pourquoi la suppression avec propagation décale parfois le micro par rapport à la vidéo dans Premiere Pro, et comment couper plusieurs pistes proprement.">
+<link rel="canonical" href="https://auto-derush.github.io/guides/supprimer-avec-propagation-plusieurs-pistes/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/supprimer-avec-propagation-plusieurs-pistes/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/ripple-delete-multiple-tracks/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/ripple-delete-multiple-tracks/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Supprimer avec propagation sur plusieurs pistes sans désynchroniser le son | Auto-dérush">
+<meta property="og:description" content="Pourquoi la suppression avec propagation décale parfois le micro par rapport à la vidéo dans Premiere Pro, et comment couper plusieurs pistes proprement.">
+<meta property="og:url" content="https://auto-derush.github.io/guides/supprimer-avec-propagation-plusieurs-pistes/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Supprimer avec propagation sur plusieurs pistes sans désynchroniser le son","description":"Pourquoi la suppression avec propagation décale parfois le micro par rapport à la vidéo dans Premiere Pro, et comment couper plusieurs pistes proprement.","inLanguage":"fr","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/guides/supprimer-avec-propagation-plusieurs-pistes/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/">Auto-<span>dérush</span></a>
+  <nav><a href="/guides/">Guides</a><a class="lang" href="/en/guides/ripple-delete-multiple-tracks/">English</a><a class="btn small" href="/#tarif">Essayer</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/guides/">← Tous les guides</a>
+<h1>Supprimer avec propagation sur plusieurs pistes sans désynchroniser le son</h1>
+<p class="meta">2 min de lecture</p>
+<p class="intro">Vous coupez un silence, vous supprimez avec propagation… et le micro n'est plus aligné sur la vidéo. C'est l'un des pièges les plus courants du montage avec un son externe.</p>
+<h2>D'où vient le décalage ?</h2>
+<p>La <strong>suppression avec propagation</strong> (<code>Maj + Suppr</code>) referme un trou en décalant tout ce qui suit. Mais elle ne décale que les pistes qui n'ont pas de clip à cet endroit, et elle respecte le ciblage des pistes. Si la vidéo et le micro ne sont pas coupés exactement au même endroit, ou si une piste est verrouillée, Premiere refuse ou décale une piste et pas l'autre.</p>
+<h2>Les bonnes pratiques à la main</h2>
+<ul><li>Coupez <strong>toutes les pistes d'un coup</strong> avec <code>Ctrl + Maj + K</code> plutôt que piste par piste.</li><li><strong>Liez</strong> la vidéo et l'audio synchronisé (clic droit &gt; Lier) pour qu'ils restent ensemble.</li><li>Vérifiez qu'aucun clip d'une autre piste (une musique, par exemple) ne chevauche le silence : il bloque la propagation.</li><li>Travaillez sur une séquence qui ne contient que les rushs : ajoutez la musique et l'habillage après le dérush.</li></ul>
+<h2>Ce que fait Auto-dérush</h2>
+<p>Auto-dérush a été conçu autour de ce problème :</p>
+<ul><li>les coupes tombent <strong>exactement sur une image</strong> de la séquence ;</li><li>chaque bord de silence est coupé <strong>sur toutes les pistes d'un coup</strong>, comme <code>Ctrl + Maj + K</code>, ce qui garde la vidéo liée à son audio ;</li><li>les clips sélectionnés sont recalés un par un, du plus tôt au plus tard, pour un résultat fiable même avec beaucoup de coupes ;</li><li>les clips non sélectionnés placés après la sélection sont décalés, comme avec la suppression avec propagation de Premiere.</li></ul>
+<aside class="tip">Si une piste contient un clip non sélectionné qui chevauche un silence (une musique, par exemple), elle n'est pas décalée, et le panneau vous indique laquelle. Vous gardez le contrôle.</aside>
+<h2>Avec un micro externe</h2>
+<p>C'est le cas typique : la caméra enregistre l'image et un son témoin, le micro-cravate enregistre la voix. Sélectionnez la vidéo et le micro avant de lancer le dérush : les deux sont coupés au même endroit, et la synchro reste parfaite.</p>
+<div class="cta"><h2>Faites-le en un clic</h2><p>Auto-dérush coupe les blancs de vos rushs dans Premiere Pro, garde la vidéo et le micro synchronisés et monte vos podcasts multicam.</p><a class="btn" href="/#tarif">Essai gratuit de 7 jours</a><p class="trial">Puis 5 € par mois, sans engagement.</p></div>
+<section class="related"><h2>À lire aussi</h2><div class="cards"><a class="card" href="/guides/monter-un-podcast-multicam-premiere-pro/"><h3>Monter un podcast vidéo multicam dans Premiere Pro, automatiquement</h3><p>Deux invités, trois caméras, des micros séparés : comment couper les silences et afficher automatiquement la caméra de celui qui parle.</p></a><a class="card" href="/guides/garder-micro-externe-synchronise/"><h3>Couper une vidéo avec un micro externe sans perdre la synchro</h3><p>Caméra et micro-cravate enregistrés séparément : comment synchroniser, couper les silences et garder le son parfaitement aligné dans Premiere Pro.</p></a><a class="card" href="/guides/couper-la-voix-de-l-equipe-derriere-la-camera/"><h3>Couper automatiquement la voix de l'équipe derrière la caméra</h3><p>Questions de l'intervieweur, remarques du cadreur : comment les repérer et les couper automatiquement grâce au micro-cravate.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro est une marque d'Adobe, sans lien avec ce produit.<br><span class="legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgv/">Conditions d'abonnement et d'utilisation</a></span></div></footer>
+</body>
+</html>

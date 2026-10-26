@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ripple delete across multiple tracks without knocking audio out of sync | Auto-dérush</title>
+<meta name="description" content="Why Ripple Delete sometimes shifts the mic against the video in Premiere Pro, and how to cut several tracks cleanly.">
+<link rel="canonical" href="https://auto-derush.github.io/en/guides/ripple-delete-multiple-tracks/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/supprimer-avec-propagation-plusieurs-pistes/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/ripple-delete-multiple-tracks/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/ripple-delete-multiple-tracks/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ripple delete across multiple tracks without knocking audio out of sync | Auto-dérush">
+<meta property="og:description" content="Why Ripple Delete sometimes shifts the mic against the video in Premiere Pro, and how to cut several tracks cleanly.">
+<meta property="og:url" content="https://auto-derush.github.io/en/guides/ripple-delete-multiple-tracks/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Ripple delete across multiple tracks without knocking audio out of sync","description":"Why Ripple Delete sometimes shifts the mic against the video in Premiere Pro, and how to cut several tracks cleanly.","inLanguage":"en","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/en/guides/ripple-delete-multiple-tracks/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/?lang=en">Auto-<span>dérush</span></a>
+  <nav><a href="/en/guides/">Guides</a><a class="lang" href="/guides/supprimer-avec-propagation-plusieurs-pistes/">Français</a><a class="btn small" href="/?lang=en#tarif">Try it</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/en/guides/">← All guides</a>
+<h1>Ripple delete across multiple tracks without knocking audio out of sync</h1>
+<p class="meta">2 min read</p>
+<p class="intro">You cut a silence, ripple delete it… and the mic no longer lines up with the video. It's one of the most common traps when editing with external audio.</p>
+<h2>Where does the offset come from?</h2>
+<p><strong>Ripple Delete</strong> (<code>Shift + Delete</code>) closes a gap by shifting everything after it. But it only shifts tracks that have no clip at that spot, and it follows track targeting. If the video and the mic aren't cut at exactly the same place, or if a track is locked, Premiere refuses, or shifts one track and not the other.</p>
+<h2>Good habits when cutting by hand</h2>
+<ul><li>Cut <strong>every track at once</strong> with <code>Ctrl + Shift + K</code> instead of track by track.</li><li><strong>Link</strong> the video and its synced audio (right-click &gt; Link) so they stay together.</li><li>Check that no clip on another track (music, for example) overlaps the silence: it blocks the ripple.</li><li>Work on a sequence that only contains footage: add music and graphics after the rough cut.</li></ul>
+<h2>What Auto-dérush does</h2>
+<p>Auto-dérush was built around this problem:</p>
+<ul><li>cuts land <strong>exactly on a frame</strong> of the sequence;</li><li>each silence edge is cut <strong>on all tracks at once</strong>, like <code>Ctrl + Shift + K</code>, which keeps video linked to its audio;</li><li>selected clips are moved one by one, earliest to latest, for a reliable result even with many cuts;</li><li>unselected clips placed after the selection are shifted, just like Premiere's Ripple Delete.</li></ul>
+<aside class="tip">If a track holds an unselected clip that overlaps a silence (music, for example), it isn't shifted, and the panel tells you which one. You stay in control.</aside>
+<h2>With an external mic</h2>
+<p>This is the classic case: the camera records picture and scratch audio, the lavalier records the voice. Select both the video and the mic before running the cut: both are cut at the same spot, and sync stays perfect.</p>
+<div class="cta"><h2>Do it in one click</h2><p>Auto-dérush cuts the silences from your footage in Premiere Pro, keeps video and mic in sync, and edits multicam podcasts.</p><a class="btn" href="/?lang=en#tarif">Start your 7-day free trial</a><p class="trial">Then €5 a month, cancel anytime.</p></div>
+<section class="related"><h2>Read next</h2><div class="cards"><a class="card" href="/en/guides/edit-multicam-podcast-premiere-pro/"><h3>How to edit a multicam video podcast in Premiere Pro, automatically</h3><p>Two guests, three cameras, separate mics: how to cut the silences and automatically show the camera of whoever is speaking.</p></a><a class="card" href="/en/guides/keep-external-mic-in-sync/"><h3>How to cut a video with an external mic without losing sync</h3><p>Camera and lavalier recorded separately: how to sync, cut silences and keep audio perfectly aligned in Premiere Pro.</p></a><a class="card" href="/en/guides/remove-crew-voices-behind-camera/"><h3>Automatically cut crew voices from behind the camera</h3><p>Interviewer questions, camera operator comments: how to detect and cut them automatically using the lavalier mic.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro is a trademark of Adobe, not affiliated with this product.<br><span class="legal"><a href="/en/legal-notice/">Legal notice</a> · <a href="/en/terms/">Subscription and usage terms</a></span></div></footer>
+</body>
+</html>

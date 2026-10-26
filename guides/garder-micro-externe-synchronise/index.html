@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Couper une vidéo avec un micro externe sans perdre la synchro | Auto-dérush</title>
+<meta name="description" content="Caméra et micro-cravate enregistrés séparément : comment synchroniser, couper les silences et garder le son parfaitement aligné dans Premiere Pro.">
+<link rel="canonical" href="https://auto-derush.github.io/guides/garder-micro-externe-synchronise/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/garder-micro-externe-synchronise/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/keep-external-mic-in-sync/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/keep-external-mic-in-sync/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Couper une vidéo avec un micro externe sans perdre la synchro | Auto-dérush">
+<meta property="og:description" content="Caméra et micro-cravate enregistrés séparément : comment synchroniser, couper les silences et garder le son parfaitement aligné dans Premiere Pro.">
+<meta property="og:url" content="https://auto-derush.github.io/guides/garder-micro-externe-synchronise/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Couper une vidéo avec un micro externe sans perdre la synchro","description":"Caméra et micro-cravate enregistrés séparément : comment synchroniser, couper les silences et garder le son parfaitement aligné dans Premiere Pro.","inLanguage":"fr","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/guides/garder-micro-externe-synchronise/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/">Auto-<span>dérush</span></a>
+  <nav><a href="/guides/">Guides</a><a class="lang" href="/en/guides/keep-external-mic-in-sync/">English</a><a class="btn small" href="/#tarif">Essayer</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/guides/">← Tous les guides</a>
+<h1>Couper une vidéo avec un micro externe sans perdre la synchro</h1>
+<p class="meta">2 min de lecture</p>
+<p class="intro">Le son de la caméra est rarement bon : on enregistre la voix avec un micro-cravate ou un enregistreur à part. Le défi, c'est de garder les deux alignés pendant tout le montage.</p>
+<h2>1. Synchroniser au départ</h2>
+<ul><li>Placez la vidéo et le fichier du micro l'un au-dessus de l'autre.</li><li>Sélectionnez les deux, clic droit &gt; <strong>Synchroniser</strong> &gt; <strong>Audio</strong>. Premiere aligne les formes d'onde.</li><li>Coupez ou mutez le son témoin de la caméra si vous ne vous en servez pas.</li><li>Clic droit &gt; <strong>Lier</strong> : vidéo et micro bougent maintenant ensemble.</li></ul>
+<h2>2. Couper sans décaler</h2>
+<p>Le décalage arrive quand on coupe une piste et pas l'autre. Pour l'éviter :</p>
+<ul><li>coupez avec <code>Ctrl + Maj + K</code> (toutes les pistes) ;</li><li>supprimez avec propagation des morceaux qui contiennent à la fois la vidéo et l'audio ;</li><li>évitez les clips qui chevauchent sur d'autres pistes pendant le dérush.</li></ul>
+<h2>3. Laisser l'automatisation le faire</h2>
+<p>Avec Auto-dérush, sélectionnez la vidéo <strong>et</strong> le micro, puis cliquez sur <strong>Dérush</strong>. Toutes les pistes sélectionnées sont coupées aux mêmes images, puis recalées ensemble. La synchro ne bouge pas, même avec 200 coupes.</p>
+<h3>Sur quelle piste se fait la détection ?</h3>
+<p>Par défaut, le panneau écoute le mélange des <strong>pistes non mutées</strong>, c'est-à-dire ce que vous entendez. Vous pouvez aussi choisir une <strong>piste de référence</strong> précise (A1, A2…), même si elle est mutée : pratique pour détecter sur le micro-cravate tout en coupant aussi la vidéo et le son témoin.</p>
+<aside class="tip">Si toutes les pistes audio sélectionnées sont mutées, rien n'est coupé et le panneau vous le signale : impossible de détecter des silences dans un son qu'on n'entend pas.</aside>
+<h2>4. Vérifier</h2>
+<p>Après le dérush, lisez quelques passages au hasard en regardant les lèvres. Si la synchro était bonne avant, elle l'est après : les coupes tombent sur des images entières.</p>
+<div class="cta"><h2>Faites-le en un clic</h2><p>Auto-dérush coupe les blancs de vos rushs dans Premiere Pro, garde la vidéo et le micro synchronisés et monte vos podcasts multicam.</p><a class="btn" href="/#tarif">Essai gratuit de 7 jours</a><p class="trial">Puis 5 € par mois, sans engagement.</p></div>
+<section class="related"><h2>À lire aussi</h2><div class="cards"><a class="card" href="/guides/couper-la-voix-de-l-equipe-derriere-la-camera/"><h3>Couper automatiquement la voix de l'équipe derrière la caméra</h3><p>Questions de l'intervieweur, remarques du cadreur : comment les repérer et les couper automatiquement grâce au micro-cravate.</p></a><a class="card" href="/guides/respirations-garder-ou-couper/"><h3>Respirations au montage : faut-il les garder ou les couper ?</h3><p>Couper toutes les respirations rend une voix robotique, toutes les garder ralentit le rythme. Comment choisir, et comment les traiter automatiquement.</p></a><a class="card" href="/guides/jump-cuts-youtube-premiere-pro/"><h3>Faire des jump cuts façon YouTube dans Premiere Pro</h3><p>Le style face caméra rythmé des youtubeurs repose sur des jump cuts. Comment les faire vite, et comment rendre les sauts d'image agréables.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro est une marque d'Adobe, sans lien avec ce produit.<br><span class="legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgv/">Conditions d'abonnement et d'utilisation</a></span></div></footer>
+</body>
+</html>

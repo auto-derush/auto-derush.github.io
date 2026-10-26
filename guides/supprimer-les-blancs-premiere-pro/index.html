@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supprimer les blancs dans Premiere Pro : la méthode manuelle et la méthode automatique | Auto-dérush</title>
+<meta name="description" content="Comment couper les silences d'un rush dans Premiere Pro : à la main avec le cutter et la suppression avec propagation, ou en un clic avec Auto-dérush.">
+<link rel="canonical" href="https://auto-derush.github.io/guides/supprimer-les-blancs-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/supprimer-les-blancs-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/remove-silences-premiere-pro/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/remove-silences-premiere-pro/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Supprimer les blancs dans Premiere Pro : la méthode manuelle et la méthode automatique | Auto-dérush">
+<meta property="og:description" content="Comment couper les silences d'un rush dans Premiere Pro : à la main avec le cutter et la suppression avec propagation, ou en un clic avec Auto-dérush.">
+<meta property="og:url" content="https://auto-derush.github.io/guides/supprimer-les-blancs-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Supprimer les blancs dans Premiere Pro : la méthode manuelle et la méthode automatique","description":"Comment couper les silences d'un rush dans Premiere Pro : à la main avec le cutter et la suppression avec propagation, ou en un clic avec Auto-dérush.","inLanguage":"fr","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/guides/supprimer-les-blancs-premiere-pro/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/">Auto-<span>dérush</span></a>
+  <nav><a href="/guides/">Guides</a><a class="lang" href="/en/guides/remove-silences-premiere-pro/">English</a><a class="btn small" href="/#tarif">Essayer</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/guides/">← Tous les guides</a>
+<h1>Supprimer les blancs dans Premiere Pro : la méthode manuelle et la méthode automatique</h1>
+<p class="meta">2 min de lecture</p>
+<p class="intro">Les blancs, ce sont les silences entre les phrases : hésitations, respirations longues, moments où l'on cherche ses mots. Les couper rend une vidéo plus vivante, mais à la main, c'est l'étape la plus longue du montage.</p>
+<h2>Pourquoi couper les blancs ?</h2>
+<p>Sur YouTube, en formation ou en podcast, le spectateur décroche dès que le rythme retombe. Une interview brute de 10 minutes contient souvent 2 à 3 minutes de silences. Les retirer donne une vidéo plus courte, plus dense, et plus agréable à regarder.</p>
+<h2>La méthode manuelle dans Premiere Pro</h2>
+<ol><li>Agrandissez la piste audio pour bien voir la forme d'onde (double-clic sur l'en-tête de piste ou molette avec Alt).</li><li>Repérez les zones plates : ce sont les silences.</li><li>Placez la tête de lecture au début du silence et coupez avec <code>Ctrl + K</code> (ajouter un montage), ou <code>Ctrl + Maj + K</code> pour couper toutes les pistes d'un coup.</li><li>Faites de même à la fin du silence.</li><li>Sélectionnez le morceau coupé, puis clic droit &gt; <strong>Supprimer avec propagation</strong> (ou <code>Maj + Suppr</code>) pour refermer le trou.</li><li>Recommencez… pour chaque silence.</li></ol>
+<p>Sur un rush de 10 minutes, comptez facilement 100 à 200 coupes. C'est précis, mais c'est long, et les erreurs arrivent vite : un mot rogné, un micro externe qui se décale par rapport à la vidéo.</p>
+<aside class="tip">Astuce : écoutez toujours la transition après une coupe. Un silence coupé trop court donne une impression de « saut » dans la voix.</aside>
+<h2>La méthode automatique avec Auto-dérush</h2>
+<p>Auto-dérush est un panneau pour Premiere Pro qui fait ce travail à votre place :</p>
+<ol><li>Sélectionnez vos clips dans la timeline (la vidéo seule, ou la vidéo et le micro).</li><li>Choisissez un réglage : <strong>Serré</strong>, <strong>Naturel</strong> ou <strong>Large</strong>.</li><li>Cliquez sur <strong>Dérush</strong>.</li></ol>
+<p>Le panneau analyse l'audio, repère chaque silence, coupe à l'image près sur toutes les pistes sélectionnées en même temps, puis recolle le montage. Une interview de 10 minutes est traitée en moins de 30 secondes.</p>
+<h3>Ce qui évite de couper des mots</h3>
+<ul><li><strong>Les marges</strong> : un peu de temps est gardé avant la reprise de parole (100 ms par défaut) et après la fin de la phrase (150 ms).</li><li><strong>La durée minimale d'un blanc</strong> : les pauses courtes (moins de 500 ms en réglage Naturel) sont conservées, pour garder un rythme naturel.</li><li><strong>La détection en deux seuils</strong> : la voix démarre au seuil choisi, mais ne s'arrête que 6 dB plus bas. Les fins de mots, plus faibles, ne sont donc pas coupées.</li></ul>
+<h3>Et si le résultat ne convient pas ?</h3>
+<p>Avant chaque dérush, une copie de sécurité de la séquence est créée dans le projet. Le bouton <strong>Annuler le dérush</strong> la rouvre en un clic.</p>
+<h2>En résumé</h2>
+<p>La méthode manuelle reste utile pour une ou deux coupes précises. Pour un rush entier, l'automatique fait gagner des dizaines de minutes par vidéo, sans risque de désynchroniser le son.</p>
+<div class="cta"><h2>Faites-le en un clic</h2><p>Auto-dérush coupe les blancs de vos rushs dans Premiere Pro, garde la vidéo et le micro synchronisés et monte vos podcasts multicam.</p><a class="btn" href="/#tarif">Essai gratuit de 7 jours</a><p class="trial">Puis 5 € par mois, sans engagement.</p></div>
+<section class="related"><h2>À lire aussi</h2><div class="cards"><a class="card" href="/guides/derusher-une-interview-rapidement/"><h3>Dérusher une interview rapidement dans Premiere Pro</h3><p>Une méthode en 4 étapes pour passer d'une interview brute à un premier montage propre, en coupant automatiquement les silences et les hésitations.</p></a><a class="card" href="/guides/choisir-le-seuil-en-db/"><h3>Quel seuil en dB choisir pour détecter les silences ?</h3><p>Bruit de fond, niveau de voix, seuil de détection : comment régler le seuil en décibels pour couper les silences sans couper les mots.</p></a><a class="card" href="/guides/supprimer-avec-propagation-plusieurs-pistes/"><h3>Supprimer avec propagation sur plusieurs pistes sans désynchroniser le son</h3><p>Pourquoi la suppression avec propagation décale parfois le micro par rapport à la vidéo dans Premiere Pro, et comment couper plusieurs pistes proprement.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro est une marque d'Adobe, sans lien avec ce produit.<br><span class="legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgv/">Conditions d'abonnement et d'utilisation</a></span></div></footer>
+</body>
+</html>

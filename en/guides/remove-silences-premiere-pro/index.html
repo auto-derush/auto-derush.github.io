@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to remove silences in Premiere Pro: the manual way and the automatic way | Auto-dérush</title>
+<meta name="description" content="How to cut the silences out of footage in Premiere Pro: by hand with Add Edit and Ripple Delete, or in one click with Auto-dérush.">
+<link rel="canonical" href="https://auto-derush.github.io/en/guides/remove-silences-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/supprimer-les-blancs-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/remove-silences-premiere-pro/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/remove-silences-premiere-pro/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to remove silences in Premiere Pro: the manual way and the automatic way | Auto-dérush">
+<meta property="og:description" content="How to cut the silences out of footage in Premiere Pro: by hand with Add Edit and Ripple Delete, or in one click with Auto-dérush.">
+<meta property="og:url" content="https://auto-derush.github.io/en/guides/remove-silences-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to remove silences in Premiere Pro: the manual way and the automatic way","description":"How to cut the silences out of footage in Premiere Pro: by hand with Add Edit and Ripple Delete, or in one click with Auto-dérush.","inLanguage":"en","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/en/guides/remove-silences-premiere-pro/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/?lang=en">Auto-<span>dérush</span></a>
+  <nav><a href="/en/guides/">Guides</a><a class="lang" href="/guides/supprimer-les-blancs-premiere-pro/">Français</a><a class="btn small" href="/?lang=en#tarif">Try it</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/en/guides/">← All guides</a>
+<h1>How to remove silences in Premiere Pro: the manual way and the automatic way</h1>
+<p class="meta">2 min read</p>
+<p class="intro">Silences are the gaps between sentences: hesitations, long breaths, moments spent looking for words. Cutting them makes a video feel alive, but doing it by hand is the slowest part of editing.</p>
+<h2>Why cut silences?</h2>
+<p>On YouTube, in courses or in podcasts, viewers drop off as soon as the pace slows. A raw 10-minute interview often contains 2 to 3 minutes of silence. Removing it gives you a shorter, denser video that's nicer to watch.</p>
+<h2>The manual method in Premiere Pro</h2>
+<ol><li>Make the audio track taller so you can see the waveform (double-click the track header, or Alt + scroll).</li><li>Look for flat areas: those are the silences.</li><li>Put the playhead at the start of a silence and cut with <code>Ctrl + K</code> (Add Edit), or <code>Ctrl + Shift + K</code> to cut every track at once.</li><li>Do the same at the end of the silence.</li><li>Select the cut piece, then right-click &gt; <strong>Ripple Delete</strong> (or <code>Shift + Delete</code>) to close the gap.</li><li>Repeat… for every silence.</li></ol>
+<p>On a 10-minute clip, that's easily 100 to 200 cuts. It's precise, but slow, and mistakes creep in: a clipped word, or an external mic drifting out of sync with the video.</p>
+<aside class="tip">Tip: always listen to the transition after a cut. A silence trimmed too tight makes the voice sound like it &quot;jumps&quot;.</aside>
+<h2>The automatic method with Auto-dérush</h2>
+<p>Auto-dérush is a Premiere Pro panel that does the job for you:</p>
+<ol><li>Select your clips in the timeline (video alone, or video and mic).</li><li>Pick a preset: <strong>Tight</strong>, <strong>Natural</strong> or <strong>Loose</strong>.</li><li>Click <strong>Cut silences</strong>.</li></ol>
+<p>The panel analyzes the audio, finds every silence, cuts frame-accurately on all selected tracks at once, then closes the gaps. A 10-minute interview is processed in under 30 seconds.</p>
+<h3>What keeps words from being clipped</h3>
+<ul><li><strong>Padding</strong>: a little time is kept before speech resumes (100 ms by default) and after a sentence ends (150 ms).</li><li><strong>Minimum silence length</strong>: short pauses (under 500 ms with the Natural preset) are kept, so the rhythm stays natural.</li><li><strong>Two-level detection</strong>: speech starts at the chosen threshold but only stops 6 dB lower, so quieter word endings aren't cut.</li></ul>
+<h3>What if you don't like the result?</h3>
+<p>Before every cut, a backup copy of the sequence is created in the project. The <strong>Undo cut</strong> button reopens it in one click.</p>
+<h2>In short</h2>
+<p>The manual method is still handy for one or two precise cuts. For a whole clip, the automatic way saves dozens of minutes per video, with no risk of knocking the audio out of sync.</p>
+<div class="cta"><h2>Do it in one click</h2><p>Auto-dérush cuts the silences from your footage in Premiere Pro, keeps video and mic in sync, and edits multicam podcasts.</p><a class="btn" href="/?lang=en#tarif">Start your 7-day free trial</a><p class="trial">Then €5 a month, cancel anytime.</p></div>
+<section class="related"><h2>Read next</h2><div class="cards"><a class="card" href="/en/guides/edit-an-interview-fast/"><h3>How to edit an interview fast in Premiere Pro</h3><p>A 4-step method to go from a raw interview to a clean first cut, by automatically removing silences and hesitations.</p></a><a class="card" href="/en/guides/choose-silence-threshold-db/"><h3>What dB threshold should you use to detect silences?</h3><p>Background noise, voice level, detection threshold: how to set the decibel threshold to cut silences without clipping words.</p></a><a class="card" href="/en/guides/ripple-delete-multiple-tracks/"><h3>Ripple delete across multiple tracks without knocking audio out of sync</h3><p>Why Ripple Delete sometimes shifts the mic against the video in Premiere Pro, and how to cut several tracks cleanly.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro is a trademark of Adobe, not affiliated with this product.<br><span class="legal"><a href="/en/legal-notice/">Legal notice</a> · <a href="/en/terms/">Subscription and usage terms</a></span></div></footer>
+</body>
+</html>

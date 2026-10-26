@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quel seuil en dB choisir pour détecter les silences ? | Auto-dérush</title>
+<meta name="description" content="Bruit de fond, niveau de voix, seuil de détection : comment régler le seuil en décibels pour couper les silences sans couper les mots.">
+<link rel="canonical" href="https://auto-derush.github.io/guides/choisir-le-seuil-en-db/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/choisir-le-seuil-en-db/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/choose-silence-threshold-db/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/choose-silence-threshold-db/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Quel seuil en dB choisir pour détecter les silences ? | Auto-dérush">
+<meta property="og:description" content="Bruit de fond, niveau de voix, seuil de détection : comment régler le seuil en décibels pour couper les silences sans couper les mots.">
+<meta property="og:url" content="https://auto-derush.github.io/guides/choisir-le-seuil-en-db/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Quel seuil en dB choisir pour détecter les silences ?","description":"Bruit de fond, niveau de voix, seuil de détection : comment régler le seuil en décibels pour couper les silences sans couper les mots.","inLanguage":"fr","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/guides/choisir-le-seuil-en-db/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/">Auto-<span>dérush</span></a>
+  <nav><a href="/guides/">Guides</a><a class="lang" href="/en/guides/choose-silence-threshold-db/">English</a><a class="btn small" href="/#tarif">Essayer</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/guides/">← Tous les guides</a>
+<h1>Quel seuil en dB choisir pour détecter les silences ?</h1>
+<p class="meta">2 min de lecture</p>
+<p class="intro">Tout outil de suppression des silences repose sur un seuil : en dessous de ce volume, le son est considéré comme un blanc. Mal réglé, il coupe des mots ou laisse passer des silences.</p>
+<h2>Ce que mesure le seuil</h2>
+<p>Le volume se mesure en décibels (dB), avec 0 dB comme maximum. Plus le chiffre est négatif, plus le son est faible. Dans un enregistrement de voix typique :</p>
+<ul><li>le <strong>bruit de fond</strong> d'une pièce calme se situe souvent entre -60 et -50 dB ;</li><li>la <strong>voix</strong> se situe plutôt entre -25 et -10 dB.</li></ul>
+<p>Le seuil doit se placer entre les deux.</p>
+<h2>Trop haut, trop bas</h2>
+<ul><li><strong>Seuil trop haut</strong> (proche de la voix, par exemple -20 dB) : les syllabes faibles et les fins de phrases passent sous le seuil et sont coupées.</li><li><strong>Seuil trop bas</strong> (proche du bruit, par exemple -58 dB) : le bruit de fond est pris pour de la parole, et rien n'est coupé.</li></ul>
+<h2>La règle pratique</h2>
+<p>Placez le seuil plus près du bruit que de la voix : environ au tiers de l'écart en partant du bruit. Avec un bruit de fond à -55 dB et une voix à -19 dB, l'écart est de 36 dB : un seuil autour de -43 dB fonctionne bien.</p>
+<aside class="tip">C'est exactement ce que fait le bouton <strong>Analyser la sélection</strong> d'Auto-dérush : il mesure le bruit et la voix de votre rush, puis propose ce seuil. Un clic sur <strong>Appliquer</strong> le règle.</aside>
+<h2>Lire la courbe</h2>
+<p>Après l'analyse, Auto-dérush affiche la courbe de volume du rush, avec le seuil en pointillés et les zones qui seront coupées en rouge. Un clic sur la courbe place la tête de lecture de Premiere à cet endroit : appuyez sur Espace pour écouter et vérifier.</p>
+<h2>Quand le contraste est trop faible</h2>
+<p>Si la voix et le bruit de fond sont trop proches (vent, climatisation, foule), aucun seuil ne sépare proprement les deux. Le panneau le signale. Dans ce cas, nettoyez d'abord le son (réduction de bruit dans Audition ou avec <strong>Améliorer la parole</strong>), puis relancez l'analyse.</p>
+<h2>Les autres réglages qui comptent</h2>
+<ul><li><strong>Durée minimale d'un blanc</strong> : une pause plus courte est gardée, même sous le seuil.</li><li><strong>Marges avant et après</strong> : un peu de silence est conservé autour de la parole.</li><li><strong>Segment minimal gardé</strong> : un clic ou une toux isolés, plus courts que cette durée, sont retirés.</li></ul>
+<div class="cta"><h2>Faites-le en un clic</h2><p>Auto-dérush coupe les blancs de vos rushs dans Premiere Pro, garde la vidéo et le micro synchronisés et monte vos podcasts multicam.</p><a class="btn" href="/#tarif">Essai gratuit de 7 jours</a><p class="trial">Puis 5 € par mois, sans engagement.</p></div>
+<section class="related"><h2>À lire aussi</h2><div class="cards"><a class="card" href="/guides/supprimer-avec-propagation-plusieurs-pistes/"><h3>Supprimer avec propagation sur plusieurs pistes sans désynchroniser le son</h3><p>Pourquoi la suppression avec propagation décale parfois le micro par rapport à la vidéo dans Premiere Pro, et comment couper plusieurs pistes proprement.</p></a><a class="card" href="/guides/monter-un-podcast-multicam-premiere-pro/"><h3>Monter un podcast vidéo multicam dans Premiere Pro, automatiquement</h3><p>Deux invités, trois caméras, des micros séparés : comment couper les silences et afficher automatiquement la caméra de celui qui parle.</p></a><a class="card" href="/guides/garder-micro-externe-synchronise/"><h3>Couper une vidéo avec un micro externe sans perdre la synchro</h3><p>Caméra et micro-cravate enregistrés séparément : comment synchroniser, couper les silences et garder le son parfaitement aligné dans Premiere Pro.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro est une marque d'Adobe, sans lien avec ce produit.<br><span class="legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgv/">Conditions d'abonnement et d'utilisation</a></span></div></footer>
+</body>
+</html>

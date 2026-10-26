@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to edit a multicam video podcast in Premiere Pro, automatically | Auto-dérush</title>
+<meta name="description" content="Two guests, three cameras, separate mics: how to cut the silences and automatically show the camera of whoever is speaking.">
+<link rel="canonical" href="https://auto-derush.github.io/en/guides/edit-multicam-podcast-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/monter-un-podcast-multicam-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/edit-multicam-podcast-premiere-pro/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/edit-multicam-podcast-premiere-pro/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to edit a multicam video podcast in Premiere Pro, automatically | Auto-dérush">
+<meta property="og:description" content="Two guests, three cameras, separate mics: how to cut the silences and automatically show the camera of whoever is speaking.">
+<meta property="og:url" content="https://auto-derush.github.io/en/guides/edit-multicam-podcast-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to edit a multicam video podcast in Premiere Pro, automatically","description":"Two guests, three cameras, separate mics: how to cut the silences and automatically show the camera of whoever is speaking.","inLanguage":"en","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-10-18","mainEntityOfPage":"https://auto-derush.github.io/en/guides/edit-multicam-podcast-premiere-pro/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/?lang=en">Auto-<span>dérush</span></a>
+  <nav><a href="/en/guides/">Guides</a><a class="lang" href="/guides/monter-un-podcast-multicam-premiere-pro/">Français</a><a class="btn small" href="/?lang=en#tarif">Try it</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/en/guides/">← All guides</a>
+<h1>How to edit a multicam video podcast in Premiere Pro, automatically</h1>
+<p class="meta">2 min read</p>
+<p class="intro">A podcast shot with several cameras means hours of editing: cutting silences, then picking the right camera for every sentence. Both can be automated.</p>
+<h2>The classic workflow</h2>
+<p>Premiere Pro has native multi-camera editing: you create a multi-camera source sequence, then switch angles live during playback. It works, but you have to watch everything in real time, and cutting silences remains a separate step.</p>
+<h2>The idea: each mic tells you who's talking</h2>
+<p>In a podcast, each speaker has their own mic. At any moment, the loudest mic tells you who is talking. So analyzing the mics is enough to know which camera to show.</p>
+<h2>With Auto-dérush</h2>
+<ol><li>Put the cameras on video tracks (V1, V2, V3…) and the mics on audio tracks, all synced.</li><li>Check <strong>Multicam edit (podcast)</strong> in the panel.</li><li>Give each track a role: &quot;Speaker 1&quot;, &quot;Speaker 2&quot;, &quot;Wide shot&quot; for video, &quot;Speaker 1 mic&quot;, &quot;Speaker 2 mic&quot; for audio.</li><li>Select all the clips and click <strong>Cut silences</strong>.</li></ol>
+<p>The panel first cuts the silences (when nobody is talking), then splits the sequence at every change of speaker and enables the camera of whoever is talking. The sound is never cut.</p>
+<h3>Settings that make the edit feel natural</h3>
+<ul><li><strong>Minimum shot length</strong> (2 s by default): a &quot;yes&quot; or a &quot;hmm&quot; doesn't switch cameras.</li><li><strong>Wide shot when several people talk</strong>: if two mics are within 6 dB of each other, the wide shot is shown.</li><li><strong>Wide shot after X seconds</strong>: for variety and reactions when staying on the same person for a long time.</li><li><strong>Wide shot on big cuts</strong>: hides the jump cut when a long silence was removed mid-sentence.</li></ul>
+<aside class="tip">This isn't a native multicam sequence: each shot is a piece of clip on its own track, with the other cameras disabled. So you can touch up any shot by hand afterwards.</aside>
+<h2>The result</h2>
+<p>A complete first cut, silences removed and cameras chosen, in seconds. You refine a few shots by hand instead of editing everything.</p>
+<div class="cta"><h2>Do it in one click</h2><p>Auto-dérush cuts the silences from your footage in Premiere Pro, keeps video and mic in sync, and edits multicam podcasts.</p><a class="btn" href="/?lang=en#tarif">Start your 7-day free trial</a><p class="trial">Then €5 a month, cancel anytime.</p></div>
+<section class="related"><h2>Read next</h2><div class="cards"><a class="card" href="/en/guides/keep-external-mic-in-sync/"><h3>How to cut a video with an external mic without losing sync</h3><p>Camera and lavalier recorded separately: how to sync, cut silences and keep audio perfectly aligned in Premiere Pro.</p></a><a class="card" href="/en/guides/remove-crew-voices-behind-camera/"><h3>Automatically cut crew voices from behind the camera</h3><p>Interviewer questions, camera operator comments: how to detect and cut them automatically using the lavalier mic.</p></a><a class="card" href="/en/guides/breaths-keep-or-cut/"><h3>Breaths in editing: keep them or cut them?</h3><p>Cutting every breath makes a voice sound robotic, keeping them all slows the pace. How to choose, and how to handle them automatically.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro is a trademark of Adobe, not affiliated with this product.<br><span class="legal"><a href="/en/legal-notice/">Legal notice</a> · <a href="/en/terms/">Subscription and usage terms</a></span></div></footer>
+</body>
+</html>

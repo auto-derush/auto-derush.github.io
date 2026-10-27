@@ -1,9 +1,9 @@
 {
- "version": "1.3.2",
- "zip": "https://auto-derush.github.io/maj/AutoDerush-1.3.2.zip",
- "sha256": "d76215aa7ddf66e93447c2b10ec6f9bfeaa0f042e94e9aa4e89e89efb1fa2735",
+ "version": "1.3.3",
+ "zip": "https://auto-derush.github.io/maj/AutoDerush-1.3.3.zip",
+ "sha256": "fad52bef91afa9408b05b5cf5d1d1225e8aa5bdeffb7e052e242c20642cb8510",
  "notes": {
-  "fr": "Mises à jour automatiques et clés invitées.",
-  "en": "Automatic updates and guest keys."
+  "fr": "Paiement par Lemon Squeezy : les clés Lemon Squeezy sont acceptées.",
+  "en": "Lemon Squeezy checkout: Lemon Squeezy keys are now accepted."
  }
 }

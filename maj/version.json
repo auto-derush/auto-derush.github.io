@@ -1,9 +1,9 @@
 {
- "version": "1.3.3",
- "zip": "https://auto-derush.github.io/maj/AutoDerush-1.3.3.zip",
- "sha256": "fad52bef91afa9408b05b5cf5d1d1225e8aa5bdeffb7e052e242c20642cb8510",
+ "version": "1.3.4",
+ "zip": "https://auto-derush.github.io/maj/AutoDerush-1.3.4.zip",
+ "sha256": "06f147f1aad612bbb2aed7d6205053fd29585241dd14fcb733616b14e3052332",
  "notes": {
-  "fr": "Paiement par Lemon Squeezy : les clés Lemon Squeezy sont acceptées.",
-  "en": "Lemon Squeezy checkout: Lemon Squeezy keys are now accepted."
+  "fr": "Paiement par Lemon Squeezy ; version stable.",
+  "en": "Lemon Squeezy checkout; stable release."
  }
 }

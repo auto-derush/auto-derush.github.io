@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Auto-dérush · WiiccKK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#111214; --panel:#1b1c20; --border:#2e3036; --text:#e8e8ea; --muted:#9a9ca3; --accent:#9a7cff; --warn:#e5a84b; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 Inter, system-ui, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
+.logo { font-weight:800; font-size:20px; margin-bottom:28px; } .logo span { color:var(--accent); }
+h1 { font-size:32px; line-height:1.2; margin:0 0 8px; }
+h2 { font-size:20px; margin:0 0 12px; }
+p { margin:0 0 12px; } .muted { color:var(--muted); }
+section { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:22px; margin-top:20px; }
+ol { margin:12px 0 0; padding-left:22px; } li { margin-bottom:8px; }
+.btn { display:inline-block; background:var(--accent); color:#111; font-weight:700; text-decoration:none;
+        border:0; border-radius:10px; padding:12px 18px; font-size:16px; cursor:pointer; }
+.btn.sec { background:transparent; color:var(--accent); border:1px solid var(--accent); padding:8px 14px; font-size:15px; }
+textarea { width:100%; height:92px; background:#0c0d0f; color:var(--text); border:1px solid var(--border);
+           border-radius:10px; padding:10px; font:13px/1.4 ui-monospace, Consolas, monospace; resize:none; word-break:break-all; }
+.warn { border-left:3px solid var(--warn); padding:8px 12px; background:#2a2418; border-radius:6px; margin:8px 0 0; font-size:15px; }
+</style>
+</head>
+<body>
+<main>
+<div class="logo">Auto-<span>dérush</span></div>
+<h1>Welcome WiiccKK!</h1>
+<p class="muted">Everything you need is on this page: the plugin, your free month, and how to earn money with it.</p>
+
+<section>
+<h2>1. Download and install</h2>
+<a class="btn" href="https://github.com/auto-derush/auto-derush.github.io/releases/download/invites/AutoDerush-wiicckk.zip">Download Auto-dérush</a>
+<ol><li>Close Premiere Pro and unzip the file.</li><li>Windows: double-click <b>Installer Auto-derush (Windows).cmd</b>. If a blue warning appears, click <b>More info</b> then <b>Run anyway</b>.<br>Mac: right-click <b>Installer Auto-derush (Mac).command</b> then <b>Open</b>.</li><li>Open Premiere Pro: <b>Window &gt; Extensions &gt; Auto-dérush</b>.</li></ol>
+</section>
+
+<section>
+<h2>2. Your free month</h2>
+<p>In the panel, click <b>Activate a key</b>, paste this key, then <b>Activate</b>. Full access until <b>December 4, 2026</b>.</p>
+<textarea id="cle" readonly>AD1-eyJuIjoiV2lpY2NLSyIsIngiOiIyMDI2LTEyLTA0IiwiaSI6Ijg1ODI2NCJ9.Ha_vkImxbe2CY74WFQY3C-ca3rdYFoWB1TtGGOveTkIlCZCYjXqBGNZQDil980yyi5um0vownS0W0Bc-BB3NDg</textarea>
+<p style="margin-top:10px"><button class="btn sec" id="copier" type="button">Copy the key</button></p>
+<p class="muted">How to use it: put your clips on the timeline, select them and click the button in the panel. Every silence is cut, video and audio stay in sync.</p>
+</section>
+
+<section>
+<h2>3. Earn 30% on every subscription</h2>
+<p>Share Auto-dérush with your audience: you get <b>30% of every subscription, every month</b>, as long as the customer stays subscribed. Lemon Squeezy (our payment platform) pays you directly, by bank or PayPal.</p>
+<ol>
+<li>Create your free affiliate account and enter your payout details. Lemon Squeezy checks new accounts, it can take a day or two.<br><a class="btn sec" href="https://affiliates.lemonsqueezy.com" target="_blank" rel="noopener">Create my affiliate account</a>
+<p class="warn">If Lemon Squeezy asks you to <b>“Create your store”</b>, don't: that page is for sellers. Go to <b>affiliates.lemonsqueezy.com</b> instead.</p></li>
+<li>Join the Auto-dérush program (you are accepted automatically).<br><a class="btn sec" href="https://autoderush.lemonsqueezy.com/affiliates" target="_blank" rel="noopener">Join the Auto-dérush program</a></li>
+<li>In your Affiliate Hub, copy your personal link and put it in your video descriptions. That's it.</li>
+</ol>
+</section>
+
+<p class="muted" style="margin-top:24px">A question or a problem? Just reply to my email.</p>
+</main>
+<script>
+document.getElementById("copier").addEventListener("click", function () {
+  var c = document.getElementById("cle"), b = this;
+  c.select();
+  try { navigator.clipboard.writeText(c.value); } catch (e) { try { document.execCommand("copy"); } catch (e2) {} }
+  b.textContent = "Copied!";
+});
+</script>
+</body>
+</html>

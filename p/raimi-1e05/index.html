@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Auto-dérush · Raïmi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#111214; --panel:#1b1c20; --border:#2e3036; --text:#e8e8ea; --muted:#9a9ca3; --accent:#9a7cff; --warn:#e5a84b; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 Inter, system-ui, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
+.logo { font-weight:800; font-size:20px; margin-bottom:28px; } .logo span { color:var(--accent); }
+h1 { font-size:32px; line-height:1.2; margin:0 0 8px; }
+h2 { font-size:20px; margin:0 0 12px; }
+p { margin:0 0 12px; } .muted { color:var(--muted); }
+section { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:22px; margin-top:20px; }
+ol { margin:12px 0 0; padding-left:22px; } li { margin-bottom:8px; }
+.btn { display:inline-block; background:var(--accent); color:#111; font-weight:700; text-decoration:none;
+        border:0; border-radius:10px; padding:12px 18px; font-size:16px; cursor:pointer; }
+.btn.sec { background:transparent; color:var(--accent); border:1px solid var(--accent); padding:8px 14px; font-size:15px; }
+textarea { width:100%; height:92px; background:#0c0d0f; color:var(--text); border:1px solid var(--border);
+           border-radius:10px; padding:10px; font:13px/1.4 ui-monospace, Consolas, monospace; resize:none; word-break:break-all; }
+.warn { border-left:3px solid var(--warn); padding:8px 12px; background:#2a2418; border-radius:6px; margin:8px 0 0; font-size:15px; }
+</style>
+</head>
+<body>
+<main>
+<div class="logo">Auto-<span>dérush</span></div>
+<h1>Bienvenue Raïmi !</h1>
+<p class="muted">Tout est sur cette page : le plugin, ton mois offert, et comment gagner de l'argent avec.</p>
+
+<section>
+<h2>1. Télécharger et installer</h2>
+<a class="btn" href="https://github.com/auto-derush/auto-derush.github.io/releases/download/invites/AutoDerush-raimi.zip">Télécharger Auto-dérush</a>
+<ol><li>Ferme Premiere Pro et dézippe le fichier.</li><li>Windows : double-clique sur <b>Installer Auto-derush (Windows).cmd</b>. Si un avertissement bleu s'affiche, clique sur <b>Informations complémentaires</b> puis <b>Exécuter quand même</b>.<br>Mac : clic droit sur <b>Installer Auto-derush (Mac).command</b> puis <b>Ouvrir</b>.</li><li>Ouvre Premiere Pro : <b>Fenêtre &gt; Extensions &gt; Auto-dérush</b>.</li></ol>
+</section>
+
+<section>
+<h2>2. Ton mois offert</h2>
+<p>Dans le panneau, clique sur <b>Activer une clé</b>, colle cette clé, puis <b>Activer</b>. Accès complet jusqu'au <b>4 décembre 2026</b>.</p>
+<textarea id="cle" readonly>AD1-eyJuIjoiUmHDr21pIiwieCI6IjIwMjYtMTItMDQiLCJpIjoiNjJiNDM3In0.OsmvNF24n7Rh5bbmjH0UCQLEu8glOs48oIoxumxhX9XYk4ZQ7RDeGEusa6Yftn7wI-GIvN4XMIzD7SkRjQt0Aw</textarea>
+<p style="margin-top:10px"><button class="btn sec" id="copier" type="button">Copier la clé</button></p>
+<p class="muted">Pour t'en servir : mets tes clips sur la timeline, sélectionne-les et clique sur le bouton du panneau. Tous les blancs sont coupés, l'image et le son restent synchro.</p>
+</section>
+
+<section>
+<h2>3. Gagne 30 % sur chaque abonnement</h2>
+<p>Parle d'Auto-dérush à ton audience : tu touches <b>30 % de chaque abonnement, tous les mois</b>, tant que le client reste abonné. C'est Lemon Squeezy (notre plateforme de paiement) qui te paie directement, par virement ou PayPal.</p>
+<ol>
+<li>Crée ton compte d'affilié gratuit et entre tes coordonnées de paiement. Lemon Squeezy vérifie les nouveaux comptes, ça peut prendre un jour ou deux.<br><a class="btn sec" href="https://affiliates.lemonsqueezy.com" target="_blank" rel="noopener">Créer mon compte d'affilié</a>
+<p class="warn">Si Lemon Squeezy te demande de <b>« Create your store »</b>, ne le fais pas : c'est pour les vendeurs. Va plutôt sur <b>affiliates.lemonsqueezy.com</b>.</p></li>
+<li>Rejoins le programme Auto-dérush (tu es accepté automatiquement).<br><a class="btn sec" href="https://autoderush.lemonsqueezy.com/affiliates" target="_blank" rel="noopener">Rejoindre le programme Auto-dérush</a></li>
+<li>Dans ton Affiliate Hub, copie ton lien perso et mets-le dans la description de tes vidéos. C'est tout.</li>
+</ol>
+</section>
+
+<p class="muted" style="margin-top:24px">Une question, un souci ? Réponds simplement à mon mail.</p>
+</main>
+<script>
+document.getElementById("copier").addEventListener("click", function () {
+  var c = document.getElementById("cle"), b = this;
+  c.select();
+  try { navigator.clipboard.writeText(c.value); } catch (e) { try { document.execCommand("copy"); } catch (e2) {} }
+  b.textContent = "Copi\u00e9e !";
+});
+</script>
+</body>
+</html>

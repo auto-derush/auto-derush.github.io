@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Synchroniser audio et vidéo dans Premiere Pro, sans clap | Auto-dérush</title>
+<meta name="description" content="Synchronisez plusieurs caméras et un micro externe par le son dans Premiere Pro : fusion de clips, synchronisation, multicaméra et pièges à éviter.">
+<link rel="canonical" href="https://auto-derush.github.io/guides/synchroniser-audio-video-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/synchroniser-audio-video-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/sync-audio-video-premiere-pro-no-clap/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/sync-audio-video-premiere-pro-no-clap/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Synchroniser audio et vidéo dans Premiere Pro, sans clap | Auto-dérush">
+<meta property="og:description" content="Synchronisez plusieurs caméras et un micro externe par le son dans Premiere Pro : fusion de clips, synchronisation, multicaméra et pièges à éviter.">
+<meta property="og:url" content="https://auto-derush.github.io/guides/synchroniser-audio-video-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Synchroniser audio et vidéo dans Premiere Pro, sans clap","description":"Synchronisez plusieurs caméras et un micro externe par le son dans Premiere Pro : fusion de clips, synchronisation, multicaméra et pièges à éviter.","inLanguage":"fr","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-11-04","mainEntityOfPage":"https://auto-derush.github.io/guides/synchroniser-audio-video-premiere-pro/"}</script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/">Auto-<span>dérush</span></a>
+  <nav><a href="/guides/">Guides</a><a class="lang" href="/en/guides/sync-audio-video-premiere-pro-no-clap/">English</a><a class="btn small" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Essayer</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/guides/">← Tous les guides</a>
+<h1>Synchroniser audio et vidéo dans Premiere Pro, sans clap</h1>
+<p class="meta">4 min de lecture</p>
+<p class="intro">Pas de clap, pas de timecode commun : Premiere Pro sait quand même aligner caméras et micro en comparant leurs ondes sonores. Voici les trois méthodes, et comment éviter qu'une coupe ruine ensuite la synchro.</p>
+<h2>Le principe : Premiere compare les ondes sonores</h2>
+<p>Chaque caméra enregistre un son, même médiocre. Le micro externe enregistre le même son, en bien meilleure qualité. Premiere repère la forme des ondes dans les deux fichiers et décale les clips pour les faire coïncider.</p>
+<p>Il faut donc que <strong>chaque caméra ait capté le son de la scène</strong>. Une caméra dont le micro était coupé ne se synchronise pas.</p>
+<h2>Méthode 1 : fusionner un clip vidéo et le micro</h2>
+<p>La plus propre pour une caméra et un micro.</p>
+<ol><li>Dans le panneau Projet, sélectionnez le clip vidéo et le fichier audio du micro.</li><li>Clic droit, <strong>Fusionner les clips</strong> (Merge Clips).</li><li>Dans <strong>Point de synchronisation</strong>, choisissez <strong>Audio</strong>.</li><li>Cochez <strong>Supprimer l'audio du clip AV</strong> si vous ne voulez pas garder le son de la caméra. Sinon, laissez décoché : il servira de son témoin.</li><li>Validez. Premiere crée un nouveau clip, avec l'image de la caméra et le son du micro alignés.</li></ol>
+<p>Utilisez ce clip fusionné dans la timeline à la place des deux originaux.</p>
+<h2>Méthode 2 : synchroniser dans la timeline</h2>
+<p>Pratique quand les clips sont déjà posés.</p>
+<ol><li>Placez la vidéo sur V1 et le micro sur A2, à peu près en face.</li><li>Sélectionnez les deux clips.</li><li>Clic droit, <strong>Synchroniser</strong> (Synchronize), puis choisissez <strong>Audio</strong>.</li><li>Premiere décale l'un des clips pour l'aligner sur l'autre.</li></ol>
+<p>Cette méthode déplace des clips. Vérifiez ensuite qu'aucun autre clip n'a été écrasé.</p>
+<h2>Méthode 3 : plusieurs caméras, une séquence multicaméra</h2>
+<p>Pour deux caméras ou plus, plus un micro.</p>
+<ol><li>Sélectionnez toutes les caméras et le micro dans le panneau Projet.</li><li>Clic droit, <strong>Créer une séquence source multicaméra</strong> (Create Multi-Camera Source Sequence).</li><li>Dans <strong>Point de synchronisation</strong>, choisissez <strong>Audio</strong>.</li><li>Choisissez la piste audio à utiliser : celle du micro externe, en général.</li><li>Validez, puis glissez la séquence source dans une nouvelle séquence et activez l'affichage multicaméra pour basculer entre les plans.</li></ol>
+<aside class="tip"><strong>Conseil :</strong> nommez vos fichiers avant de lancer la synchro (CAM1, CAM2, MICRO). Quand une caméra se décale, vous saurez laquelle.</aside>
+<h2>Vérifier la synchro avant de monter</h2>
+<p>Une synchro automatique peut se tromper, surtout avec du bruit ou une salle qui résonne.</p>
+<ul><li>Écoutez un passage au début et un passage à la fin du clip. Une dérive se voit surtout sur les longues prises.</li><li>Zoomez sur la forme d'onde et comparez la caméra et le micro : les pics doivent tomber au même endroit.</li><li>Regardez les lèvres sur un « p » ou un « b » : un décalage d'une ou deux images se voit tout de suite.</li><li>Si Premiere échoue, essayez avec un passage plus court et plus marqué : une claque de mains, un mot fort.</li></ul>
+<h2>Quand la synchro se perd après coup</h2>
+<p>Le vrai danger arrive au montage. Si vous coupez une piste sans toucher aux autres, tout se décale. Deux règles :</p>
+<ul><li>Sélectionnez <strong>toutes les pistes liées</strong> avant de supprimer avec propagation.</li><li>Verrouillez les pistes qui ne doivent pas bouger, comme une musique.</li></ul>
+<p>Le détail est dans <a href="/guides/supprimer-avec-propagation-plusieurs-pistes/">Supprimer avec propagation sur plusieurs pistes</a>.</p>
+<h2>Avec Auto-dérush</h2>
+<p>Une fois la synchro faite, Auto-dérush coupe les blancs sur toutes les pistes sélectionnées en même temps (vidéo, micro externe, son témoin), puis recolle le montage. La synchro est gardée. Il ne synchronise pas lui-même les caméras : cette étape reste celle de Premiere Pro. Pour la suite du travail avec un micro externe, voyez <a href="/guides/garder-micro-externe-synchronise/">Couper une vidéo avec un micro externe sans perdre la synchro</a>.</p>
+<h2>Les erreurs courantes</h2>
+<ul><li><strong>Un seul enregistrement dans les deux fichiers</strong> : si le micro externe a démarré après la caméra, c'est normal que Premiere place le clip plus loin. Ce n'est pas une erreur.</li><li><strong>Son de caméra inutilisable</strong> : trop de vent ou un micro étouffé. Faites un clap de mains au début la prochaine fois, même si ce n'est pas obligatoire.</li><li><strong>Cadences différentes</strong> : des caméras en 25 et en 30 images par seconde peuvent dériver sur de longues prises. Gardez la même cadence au tournage.</li><li><strong>Coupures de la caméra</strong> : si une caméra s'arrête et redémarre, chaque morceau doit être synchronisé séparément.</li></ul>
+<div class="cta"><h2>Faites-le en un clic</h2><p>Auto-dérush coupe les blancs de vos rushs dans Premiere Pro, garde la vidéo et le micro synchronisés et monte vos podcasts multicam.</p><a class="btn" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Essai gratuit de 7 jours</a><p class="trial">Puis 5 € par mois, sans engagement.</p></div>
+<section class="related"><h2>À lire aussi</h2><div class="cards"><a class="card" href="/guides/supprimer-les-blancs-premiere-pro/"><h3>Supprimer les blancs dans Premiere Pro : la méthode manuelle et la méthode automatique</h3><p>Comment couper les silences d'un rush dans Premiere Pro : à la main avec le cutter et la suppression avec propagation, ou en un clic avec Auto-dérush.</p></a><a class="card" href="/guides/derusher-une-interview-rapidement/"><h3>Dérusher une interview rapidement dans Premiere Pro</h3><p>Une méthode en 4 étapes pour passer d'une interview brute à un premier montage propre, en coupant automatiquement les silences et les hésitations.</p></a><a class="card" href="/guides/choisir-le-seuil-en-db/"><h3>Quel seuil en dB choisir pour détecter les silences ?</h3><p>Bruit de fond, niveau de voix, seuil de détection : comment régler le seuil en décibels pour couper les silences sans couper les mots.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro est une marque d'Adobe, sans lien avec ce produit.<br><span class="legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgv/">Conditions d'abonnement et d'utilisation</a></span></div></footer>
+</body>
+</html>

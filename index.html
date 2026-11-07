@@ -44,6 +44,8 @@
   .free-note { margin: 14px 0 0; color: var(--muted); font-size: 14px; }
   .free-note a { color: var(--accent); }
 
+  .demo { justify-self: center; width: 100%; max-width: 320px; aspect-ratio: 9 / 16; border-radius: 16px; background: #000;
+          border: 1px solid var(--border); box-shadow: 0 30px 80px rgba(0,0,0,.5); display: block; }
   /* Maquette du panneau */
   .mock { background: #232323; border: 1px solid #3d3d3d; border-radius: 12px; padding: 16px; font-size: 12px;
           box-shadow: 0 30px 80px rgba(0,0,0,.5); color: #d6d6d6; }
@@ -91,6 +93,7 @@
     .grid, .steps { grid-template-columns: 1fr; }
   }
 </style>
+<script data-goatcounter="https://autoderush.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -107,18 +110,10 @@
     <div>
       <h1>Coupez tous les blancs de vos rushs <em>en un clic</em>.</h1>
       <p class="lead">Auto-dérush est un panneau pour Premiere Pro qui détecte les silences, les coupe et recolle le montage, en gardant la vidéo et le micro parfaitement synchronisés. Fini les heures de dérush à la main.</p>
-      <div class="hero-btns"><a class="btn buy" href="#tarif">Essai gratuit de 7 jours</a><a class="btn ghost" href="/telecharger/AutoDerush.zip">Version gratuite</a></div>
-      <p class="price-note">Puis 5 € / mois, sans engagement · Windows · Premiere Pro 2022 et plus récent</p>
+      <div class="hero-btns"><a class="btn" href="https://github.com/auto-derush/auto-derush.github.io/releases/download/invites/AutoDerush-site.zip" data-goatcounter-click="telechargement-haut">Télécharger gratuitement</a><a class="btn ghost" href="#tarif">Essai complet 7 jours</a></div>
+      <p class="price-note">Gratuit sans inscription ni carte (sélections de 2 min) · Version complète 5 € / mois · Windows · Premiere Pro 2022 et plus récent</p>
     </div>
-    <div class="mock" aria-hidden="true">
-      <div class="tabs"><b>Serré</b><b class="on">Naturel</b><b>Large</b></div>
-      <div class="wave" id="wave"></div>
-      <div class="row"><span>Seuil conseillé</span><span>-38 dB</span></div>
-      <div class="row"><span>Blancs détectés</span><span>142</span></div>
-      <div class="row"><span>Temps gagné</span><span>3 min 12 s</span></div>
-      <div class="go">Dérush</div>
-      <div class="ok">✓ Terminé en 18 s, vidéo et micro synchronisés.</div>
-    </div>
+    <video class="demo" id="demo" src="/assets/demo-fr.mp4" poster="/assets/demo-fr.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Démonstration : avant et après Auto-dérush"></video>
   </div>
 </div>
 
@@ -162,8 +157,8 @@
           <li>Résiliable à tout moment</li>
         </ul>
         <p class="launch">Offre de lancement : code <strong>LANCEMENT</strong>, 1 € le premier mois (100 premiers).</p>
-        <a class="btn buy" id="buy" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Essai gratuit de 7 jours</a>
-        <p class="free-note">Ou la <a href="/telecharger/AutoDerush.zip">version gratuite</a> : sélections de 2 min, sans inscription.</p>
+        <a class="btn buy" id="buy" data-goatcounter-click="essai" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Essai gratuit de 7 jours</a>
+        <p class="free-note">Ou la <a href="https://github.com/auto-derush/auto-derush.github.io/releases/download/invites/AutoDerush-site.zip" data-goatcounter-click="telechargement-tarif">version gratuite</a> : sélections de 2 min, sans inscription.</p>
       </div>
     </div>
   </div>
@@ -189,19 +184,6 @@
 </footer>
 
 <script>
-  // Courbe de volume de la maquette : barres de voix, blancs en rouge.
-  (function () {
-    var w = document.getElementById("wave"), seed = 7;
-    function rnd() { seed = (seed * 16807) % 2147483647; return seed / 2147483647; }
-    for (var i = 0; i < 70; i++) {
-      var silent = (i > 14 && i < 20) || (i > 38 && i < 45) || (i > 58 && i < 62);
-      var b = document.createElement("i");
-      b.style.height = (silent ? 4 + rnd() * 6 : 25 + rnd() * 70) + "%";
-      if (silent) b.className = "s";
-      w.appendChild(b);
-    }
-  })();
-
   // Langue : celle du navigateur (français ou anglais), modifiable avec le bouton FR / EN.
   (function () {
     var EN = {
@@ -210,12 +192,13 @@
       "Auto-dérush est un panneau pour Premiere Pro qui détecte les silences, les coupe et recolle le montage, en gardant la vidéo et le micro parfaitement synchronisés. Fini les heures de dérush à la main.":
         "Auto-dérush is a Premiere Pro panel that detects silences, cuts them and closes the gaps, keeping video and mic perfectly in sync. No more hours of manual rough cuts.",
       "Essai gratuit de 7 jours": "7-day free trial",
-      "Version gratuite": "Free version",
+      "Télécharger gratuitement": "Download for free",
+      "Essai complet 7 jours": "Full 7-day trial",
+      "Gratuit sans inscription ni carte (sélections de 2 min) · Version complète 5 € / mois · Windows · Premiere Pro 2022 et plus récent": "Free, no sign-up, no card (2-minute selections) · Full version €5 / month · Windows · Premiere Pro 2022 or later",
       "Offre de lancement : code <strong>LANCEMENT</strong>, 1 € le premier mois (100 premiers).": "Launch offer: code <strong>LANCEMENT</strong>, €1 for the first month (first 100).",
-      "Ou la <a href=\"/telecharger/AutoDerush.zip\">version gratuite</a> : sélections de 2 min, sans inscription.": "Or the <a href=\"/telecharger/AutoDerush.zip\">free version</a>: 2-minute selections, no sign-up.",
+      "Ou la <a href=\"https://github.com/auto-derush/auto-derush.github.io/releases/download/invites/AutoDerush-site.zip\" data-goatcounter-click=\"telechargement-tarif\">version gratuite</a> : sélections de 2 min, sans inscription.": "Or the <a href=\"https://github.com/auto-derush/auto-derush.github.io/releases/download/invites/AutoDerush-site.zip\" data-goatcounter-click=\"telechargement-tarif\">free version</a>: 2-minute selections, no sign-up.",
       "Y a-t-il une version gratuite ?": "Is there a free version?",
       "Oui. Téléchargez le panneau et utilisez-le sans inscription sur des sélections de 2 minutes maximum. Pour dérusher des rushs plus longs, abonnez-vous et collez votre clé dans le panneau.": "Yes. Download the panel and use it without signing up on selections up to 2 minutes. To cut longer footage, subscribe and paste your key in the panel.",
-      "Puis 5 € / mois, sans engagement · Windows · Premiere Pro 2022 et plus récent": "Then €5 / month, cancel anytime · Windows · Premiere Pro 2022 or later",
       "7 jours d'essai gratuit": "7-day free trial",
       "Comment marche l'essai gratuit ?": "How does the free trial work?",
       "Vous avez 7 jours pour tester toutes les fonctions. Votre carte est demandée à l'inscription, mais rien n'est prélevé pendant l'essai, et vous recevez un rappel par e-mail avant la fin. Résiliez avant le 7e jour et vous ne payez rien.":
@@ -295,6 +278,8 @@
       document.title = META[lang].title;
       document.querySelector('meta[name="description"]').content = META[lang].desc;
       document.getElementById("lang").textContent = lang === "en" ? "FR" : "EN";
+      var v = document.getElementById("demo");
+      v.src = "/assets/demo-" + lang + ".mp4"; v.poster = "/assets/demo-" + lang + ".jpg"; v.muted = true; v.play && v.play().catch(function () {});
       document.getElementById("guidesLink").href = lang === "en" ? "/en/guides/" : "/guides/";
       document.getElementById("lnNotice").href = lang === "en" ? "/en/legal-notice/" : "/mentions-legales/";
       document.getElementById("lnTerms").href = lang === "en" ? "/en/terms/" : "/cgv/";

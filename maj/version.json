@@ -1,9 +1,9 @@
 {
- "version": "1.3.4",
- "zip": "https://auto-derush.github.io/maj/AutoDerush-1.3.4.zip",
- "sha256": "06f147f1aad612bbb2aed7d6205053fd29585241dd14fcb733616b14e3052332",
+ "version": "1.4.0",
+ "zip": "https://auto-derush.github.io/maj/AutoDerush-1.4.0.zip",
+ "sha256": "6a166007fa94ad93058e84dd70e48c05ce03285209369cb9d66f17176ef1f489",
  "notes": {
-  "fr": "Paiement par Lemon Squeezy ; version stable.",
-  "en": "Lemon Squeezy checkout; stable release."
+  "fr": "Nouveau : montage multicam automatique (caméra de celui qui parle, plans de réaction, pas de jump cut).",
+  "en": "New: automatic multicam editing (camera follows whoever speaks, reaction shots, no jump cuts)."
  }
 }

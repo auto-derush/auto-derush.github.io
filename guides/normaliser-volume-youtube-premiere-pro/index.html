@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normaliser le volume pour YouTube (-14 LUFS) dans Premiere Pro | Auto-dérush</title>
+<meta name="description" content="Régler le volume d'une vidéo à -14 LUFS dans Premiere Pro : mesurer, corriger au gain ou à l'Essential Sound, vérifier avant l'export YouTube.">
+<link rel="canonical" href="https://auto-derush.github.io/guides/normaliser-volume-youtube-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/normaliser-volume-youtube-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/normalize-volume-youtube-premiere-pro/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/normalize-volume-youtube-premiere-pro/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Normaliser le volume pour YouTube (-14 LUFS) dans Premiere Pro | Auto-dérush">
+<meta property="og:description" content="Régler le volume d'une vidéo à -14 LUFS dans Premiere Pro : mesurer, corriger au gain ou à l'Essential Sound, vérifier avant l'export YouTube.">
+<meta property="og:url" content="https://auto-derush.github.io/guides/normaliser-volume-youtube-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Normaliser le volume pour YouTube (-14 LUFS) dans Premiere Pro","description":"Régler le volume d'une vidéo à -14 LUFS dans Premiere Pro : mesurer, corriger au gain ou à l'Essential Sound, vérifier avant l'export YouTube.","inLanguage":"fr","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-11-09","mainEntityOfPage":"https://auto-derush.github.io/guides/normaliser-volume-youtube-premiere-pro/"}</script>
+<script data-goatcounter="https://autoderush.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/">Auto-<span>dérush</span></a>
+  <nav><a href="/guides/">Guides</a><a class="lang" href="/en/guides/normalize-volume-youtube-premiere-pro/">English</a><a class="btn small" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Essayer</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/guides/">← Tous les guides</a>
+<h1>Normaliser le volume pour YouTube (-14 LUFS) dans Premiere Pro</h1>
+<p class="meta">3 min de lecture</p>
+<p class="intro">YouTube baisse le son des vidéos trop fortes. Voici comment viser -14 LUFS dans Premiere Pro, sans mauvaise surprise après la mise en ligne.</p>
+<h2>Ce que fait YouTube avec le volume</h2>
+<p>YouTube mesure le volume de votre vidéo en LUFS (le volume ressenti, pas le pic). La référence est autour de <strong>-14 LUFS</strong>. Si votre vidéo est plus forte, YouTube la baisse. Si elle est plus faible, elle reste faible : ce n'est pas un réglage que vous pouvez laisser au site.</p>
+<p>L'objectif est donc simple : arriver à environ -14 LUFS, avec des pics qui ne dépassent pas <strong>-1 dB</strong>. Une voix à -16 ou -13 LUFS reste très correcte. Ne cherchez pas le chiffre exact au dixième.</p>
+<aside class="tip">Normaliser au pic (&quot;Normalize Max Peak&quot;) n'est pas normaliser en LUFS. Un clip peut avoir un pic à 0 dB et sonner très bas. Mesurez toujours en LUFS.</aside>
+<h2>Méthode à la main dans Premiere Pro</h2>
+<h3>1. Faire le montage d'abord</h3>
+<p>Régler le volume sur un montage qui bouge encore, c'est refaire le travail. Coupez, placez la musique, puis seulement ensuite le niveau final. Si les blancs ne sont pas encore coupés, le guide <a href="/guides/supprimer-les-blancs-premiere-pro/">Supprimer les blancs dans Premiere Pro</a> passe avant celui-ci.</p>
+<h3>2. Équilibrer la voix, puis la musique</h3>
+<p>La voix est le repère. Réglez-la en premier, la musique ensuite, plus bas qu'elle. Une musique trop forte tire la mesure globale vers le haut et vous oblige à baisser la voix.</p>
+<ul><li>Sélectionnez le clip de voix et ouvrez <strong>Gain audio</strong> (raccourci <strong>G</strong>) pour monter ou baisser de quelques dB.</li><li>Vous pouvez aussi ouvrir <strong>Fenêtre &gt; Essential Sound</strong>, étiqueter le clip comme <strong>Dialogue</strong>, puis utiliser la section Volume et le bouton de mesure automatique (Auto-Match). Contrôlez le résultat ensuite : la cible par défaut n'est pas forcément -14 LUFS.</li><li>Pour une voix inégale (un invité qui parle bas, un autre fort), traitez chaque clip séparément, avant de régler l'ensemble.</li></ul>
+<h3>3. Mesurer le niveau global</h3>
+<p>Placez un indicateur de volume sur la piste principale (Master) : Premiere propose des effets de mesure comme <strong>Loudness Radar</strong>. Lancez la lecture de toute la timeline et lisez la valeur <strong>intégrée</strong>, c'est-à-dire la moyenne sur toute la durée. Ne vous fiez pas au volume instantané : il bouge tout le temps.</p>
+<h3>4. Corriger l'écart</h3>
+<p>Si la mesure donne -19 LUFS, il manque 5 dB. Deux façons de faire :</p>
+<ol><li>Monter le gain de tous les clips audio du même montant (sélectionnez-les tous, puis <strong>G</strong>).</li><li>Ou régler le gain de la piste ou du sous-mixage qui regroupe voix et musique.</li></ol>
+<p>Mesurez à nouveau. Deux passages suffisent en général.</p>
+<h3>5. Protéger les pics</h3>
+<p>Si la voix monte beaucoup, un pic peut dépasser 0 dB et saturer. Ajoutez un limiteur sur la piste principale, avec un plafond vers <strong>-1 dB</strong>. Ce n'est pas pour écraser le son, seulement pour attraper les pointes.</p>
+<h2>Vérifier avant l'export</h2>
+<ul><li>Écoutez la fin de la vidéo : un rire ou une musique finale plus fort peut faire grimper la mesure.</li><li>Réécoutez sur des écouteurs de téléphone. C'est là que la plupart de vos spectateurs vous entendent.</li><li>Dans les réglages d'export, l'onglet Audio peut proposer une normalisation du volume selon votre version de Premiere Pro. Si vous l'utilisez, mesurez quand même le fichier exporté une fois.</li></ul>
+<h2>Les erreurs fréquentes</h2>
+<ul><li><strong>Pousser à -9 ou -10 LUFS</strong> en pensant que ce sera plus percutant. YouTube baissera le tout et vous aurez surtout perdu en dynamique.</li><li><strong>Normaliser chaque clip au même niveau</strong>, y compris les ambiances. Le montage sonne plat.</li><li><strong>Mesurer avant d'avoir fini le montage.</strong> Un seul plan ajouté peut tout changer.</li><li><strong>Corriger au gain un son très bruité.</strong> Vous montez aussi le souffle. Pour ça, voyez <a href="/guides/ameliorer-le-son-d-une-interview/">Améliorer le son d'une interview dans Premiere Pro</a>.</li></ul>
+<h2>Où Auto-dérush intervient</h2>
+<p>Auto-dérush ne fait pas le mixage ni la normalisation : il coupe les blancs de vos clips, puis vous réglez le volume sur un montage déjà resserré. Mesurez le niveau après cette étape, pas avant, car la durée et le contenu changent.</p>
+<aside class="tip">Ordre conseillé : dérush, montage, mixage voix puis musique, mesure en LUFS, limiteur, export.</aside>
+<div class="cta"><h2>Faites-le en un clic</h2><p>Auto-dérush coupe les blancs de vos rushs dans Premiere Pro, garde la vidéo et le micro synchronisés et monte vos podcasts multicam.</p><a class="btn" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Essai gratuit de 7 jours</a><p class="trial">Puis 9 € par mois, sans engagement.</p></div>
+<section class="related"><h2>À lire aussi</h2><div class="cards"><a class="card" href="/guides/supprimer-les-blancs-premiere-pro/"><h3>Supprimer les blancs dans Premiere Pro : la méthode manuelle et la méthode automatique</h3><p>Comment couper les silences d'un rush dans Premiere Pro : à la main avec le cutter et la suppression avec propagation, ou en un clic avec Auto-dérush.</p></a><a class="card" href="/guides/derusher-une-interview-rapidement/"><h3>Dérusher une interview rapidement dans Premiere Pro</h3><p>Une méthode en 4 étapes pour passer d'une interview brute à un premier montage propre, en coupant automatiquement les silences et les hésitations.</p></a><a class="card" href="/guides/choisir-le-seuil-en-db/"><h3>Quel seuil en dB choisir pour détecter les silences ?</h3><p>Bruit de fond, niveau de voix, seuil de détection : comment régler le seuil en décibels pour couper les silences sans couper les mots.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro est une marque d'Adobe, sans lien avec ce produit.<br><span class="legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgv/">Conditions d'abonnement et d'utilisation</a></span></div></footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normalize Volume for YouTube (-14 LUFS) in Premiere Pro | Auto-dérush</title>
+<meta name="description" content="Set your video's volume to -14 LUFS in Premiere Pro: measure it, fix it with gain or Essential Sound, and check it before uploading to YouTube.">
+<link rel="canonical" href="https://auto-derush.github.io/en/guides/normalize-volume-youtube-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/normaliser-volume-youtube-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/normalize-volume-youtube-premiere-pro/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/normalize-volume-youtube-premiere-pro/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Normalize Volume for YouTube (-14 LUFS) in Premiere Pro | Auto-dérush">
+<meta property="og:description" content="Set your video's volume to -14 LUFS in Premiere Pro: measure it, fix it with gain or Essential Sound, and check it before uploading to YouTube.">
+<meta property="og:url" content="https://auto-derush.github.io/en/guides/normalize-volume-youtube-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Normalize Volume for YouTube (-14 LUFS) in Premiere Pro","description":"Set your video's volume to -14 LUFS in Premiere Pro: measure it, fix it with gain or Essential Sound, and check it before uploading to YouTube.","inLanguage":"en","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-11-09","mainEntityOfPage":"https://auto-derush.github.io/en/guides/normalize-volume-youtube-premiere-pro/"}</script>
+<script data-goatcounter="https://autoderush.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/?lang=en">Auto-<span>dérush</span></a>
+  <nav><a href="/en/guides/">Guides</a><a class="lang" href="/guides/normaliser-volume-youtube-premiere-pro/">Français</a><a class="btn small" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Try it</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/en/guides/">← All guides</a>
+<h1>Normalize Volume for YouTube (-14 LUFS) in Premiere Pro</h1>
+<p class="meta">3 min read</p>
+<p class="intro">YouTube turns down videos that are too loud. Here is how to aim for -14 LUFS in Premiere Pro and avoid surprises after upload.</p>
+<h2>What YouTube does with your volume</h2>
+<p>YouTube measures your video in LUFS (perceived loudness, not peak level). The reference is around <strong>-14 LUFS</strong>. If your video is louder, YouTube turns it down. If it is quieter, it stays quiet. You cannot leave that to the platform.</p>
+<p>So the goal is simple: land near -14 LUFS, with peaks that stay under <strong>-1 dB</strong>. A voice at -16 or -13 LUFS is perfectly fine. Don't chase the exact decimal.</p>
+<aside class="tip">Normalizing to peak (&quot;Normalize Max Peak&quot;) is not normalizing to LUFS. A clip can peak at 0 dB and still sound quiet. Always measure in LUFS.</aside>
+<h2>The manual method in Premiere Pro</h2>
+<h3>1. Finish the edit first</h3>
+<p>Setting levels on an edit that is still changing means doing it twice. Cut, place the music, and set the final level last. If the dead air is not trimmed yet, <a href="/en/guides/remove-silences-premiere-pro/">How to remove silences in Premiere Pro</a> comes before this guide.</p>
+<h3>2. Balance the voice, then the music</h3>
+<p>The voice is your reference. Set it first, then put the music under it. Music that is too loud pushes the overall measurement up and forces you to pull the voice down.</p>
+<ul><li>Select the voice clip and open <strong>Audio Gain</strong> (shortcut <strong>G</strong>) to raise or lower it by a few dB.</li><li>Or open <strong>Window &gt; Essential Sound</strong>, tag the clip as <strong>Dialogue</strong>, then use the Loudness section and its Auto-Match button. Check the result afterward: the default target is not necessarily -14 LUFS.</li><li>If the voice is uneven (one guest quiet, another loud), fix each clip separately before setting the whole mix.</li></ul>
+<h3>3. Measure the overall level</h3>
+<p>Put a loudness meter on the Master track. Premiere offers metering effects such as <strong>Loudness Radar</strong>. Play the whole timeline and read the <strong>integrated</strong> value, the average over the full duration. Ignore the momentary reading: it never stops moving.</p>
+<h3>4. Close the gap</h3>
+<p>If you measure -19 LUFS, you are 5 dB short. Two ways to fix it:</p>
+<ol><li>Raise the gain of all audio clips by the same amount (select them all, then <strong>G</strong>).</li><li>Or adjust the gain of the track or submix that carries voice and music.</li></ol>
+<p>Measure again. Two passes are usually enough.</p>
+<h3>5. Protect the peaks</h3>
+<p>If the voice jumps a lot, a peak can go over 0 dB and distort. Add a limiter on the Master track with the ceiling near <strong>-1 dB</strong>. It is not there to squash the sound, only to catch the spikes.</p>
+<h2>Check before you export</h2>
+<ul><li>Listen to the end of the video. A laugh or a louder outro track can push the measurement up.</li><li>Play it on phone earbuds. That is how most of your viewers will hear it.</li><li>Depending on your Premiere Pro version, the Audio tab in Export Settings may offer loudness normalization. If you use it, still measure the exported file once.</li></ul>
+<h2>Common mistakes</h2>
+<ul><li><strong>Pushing to -9 or -10 LUFS</strong> thinking it will hit harder. YouTube turns the whole thing down and you only lose dynamics.</li><li><strong>Normalizing every clip to the same level</strong>, ambience included. The edit sounds flat.</li><li><strong>Measuring before the edit is locked.</strong> One added shot can change everything.</li><li><strong>Fixing a noisy recording with gain.</strong> You raise the hiss too. For that, see <a href="/en/guides/improve-interview-audio-premiere-pro/">How to improve interview audio in Premiere Pro</a>.</li></ul>
+<h2>Where Auto-dérush fits</h2>
+<p>Auto-dérush does not mix or normalize. It cuts the silences in your clips, and you then set levels on an edit that is already tight. Measure after that step, not before, because duration and content change.</p>
+<aside class="tip">Suggested order: rough cut, edit, mix voice then music, measure in LUFS, limiter, export.</aside>
+<div class="cta"><h2>Do it in one click</h2><p>Auto-dérush cuts the silences from your footage in Premiere Pro, keeps video and mic in sync, and edits multicam podcasts.</p><a class="btn" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Start your 7-day free trial</a><p class="trial">Then €9 a month, cancel anytime.</p></div>
+<section class="related"><h2>Read next</h2><div class="cards"><a class="card" href="/en/guides/remove-silences-premiere-pro/"><h3>How to remove silences in Premiere Pro: the manual way and the automatic way</h3><p>How to cut the silences out of footage in Premiere Pro: by hand with Add Edit and Ripple Delete, or in one click with Auto-dérush.</p></a><a class="card" href="/en/guides/edit-an-interview-fast/"><h3>How to edit an interview fast in Premiere Pro</h3><p>A 4-step method to go from a raw interview to a clean first cut, by automatically removing silences and hesitations.</p></a><a class="card" href="/en/guides/choose-silence-threshold-db/"><h3>What dB threshold should you use to detect silences?</h3><p>Background noise, voice level, detection threshold: how to set the decibel threshold to cut silences without clipping words.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro is a trademark of Adobe, not affiliated with this product.<br><span class="legal"><a href="/en/legal-notice/">Legal notice</a> · <a href="/en/terms/">Subscription and usage terms</a></span></div></footer>
+</body>
+</html>

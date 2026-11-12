@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Remove Background Noise From a Voice in Premiere Pro | Auto-dérush</title>
+<meta name="description" content="Remove background noise from a voice in Premiere Pro with Essential Sound, DeNoise and EQ, plus settings that keep the voice sounding natural.">
+<link rel="canonical" href="https://auto-derush.github.io/en/guides/remove-background-noise-voice-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/enlever-bruit-de-fond-voix-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/remove-background-noise-voice-premiere-pro/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/remove-background-noise-voice-premiere-pro/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Remove Background Noise From a Voice in Premiere Pro | Auto-dérush">
+<meta property="og:description" content="Remove background noise from a voice in Premiere Pro with Essential Sound, DeNoise and EQ, plus settings that keep the voice sounding natural.">
+<meta property="og:url" content="https://auto-derush.github.io/en/guides/remove-background-noise-voice-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Remove Background Noise From a Voice in Premiere Pro","description":"Remove background noise from a voice in Premiere Pro with Essential Sound, DeNoise and EQ, plus settings that keep the voice sounding natural.","inLanguage":"en","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-11-12","mainEntityOfPage":"https://auto-derush.github.io/en/guides/remove-background-noise-voice-premiere-pro/"}</script>
+<script data-goatcounter="https://autoderush.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/?lang=en">Auto-<span>dérush</span></a>
+  <nav><a href="/en/guides/">Guides</a><a class="lang" href="/guides/enlever-bruit-de-fond-voix-premiere-pro/">Français</a><a class="btn small" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Try it</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/en/guides/">← All guides</a>
+<h1>How to Remove Background Noise From a Voice in Premiere Pro</h1>
+<p class="meta">3 min read</p>
+<p class="intro">Hiss, fan hum, air conditioning: background noise can be fixed in a few minutes in Premiere Pro. The trick is not to damage the voice by cleaning too hard.</p>
+<h2>Before you touch any setting</h2>
+<p>Listen to the clip on headphones. Work out what kind of noise you have, because each one needs a different fix:</p>
+<ul><li><strong>Hiss</strong> (mic, camera, preamp): steady and high-pitched.</li><li><strong>Rumble</strong> (fan, air conditioning, traffic): steady and low.</li><li><strong>Room echo</strong>: the voice sounds hollow. Strictly speaking, that is not noise.</li></ul>
+<p>Steady noise cleans up well. Irregular noise (voices in the background, a door slamming) does not. Cut those out instead.</p>
+<h2>Method 1: the Essential Sound panel</h2>
+<p>This is the fastest way.</p>
+<ol><li>Open <strong>Window &gt; Essential Sound</strong>.</li><li>Select your audio clip in the timeline.</li><li>Click <strong>Dialogue</strong> to set the clip type.</li><li>Tick <strong>Reduce Noise</strong> and set the slider. Start low, around 3 to 5, and raise it in small steps.</li><li>If needed, also tick <strong>Reduce Rumble</strong> for low frequencies, and <strong>DeReverb</strong> if the room rings.</li></ol>
+<p>Listen after every change. If the voice turns metallic or sounds underwater, you have gone too far. Back off.</p>
+<p>If your version of Premiere Pro has <strong>Enhance Speech</strong> in the Dialogue section, try it on very noisy recordings. Adjust the mix slider to keep the result natural. It works well, but it changes the voice more than plain noise reduction does.</p>
+<h2>Method 2: the DeNoise effect</h2>
+<p>For finer control, use an audio effect.</p>
+<ol><li>In the Effects panel, search for <strong>DeNoise</strong>.</li><li>Drag it onto the clip.</li><li>In Effect Controls, adjust <strong>Amount</strong>. A moderate value is almost always enough.</li></ol>
+<p>You can also add a <strong>Parametric Equalizer</strong> and cut everything below roughly 80 Hz. A voice has nothing useful down there, and this removes much of the rumble.</p>
+<aside class="tip">Tip: toggle the effect on and off while you listen. Your ear gets used to the processed sound quickly, and you end up overdoing it.</aside>
+<h2>Applying the setting to every clip</h2>
+<p>If you have already cut your sequence, you have dozens of small clips. Do not repeat the setting by hand:</p>
+<ol><li>Set up one clip.</li><li>Copy it (<strong>Ctrl+C</strong>).</li><li>Select the other audio clips from the same source.</li><li>Use <strong>Edit &gt; Paste Attributes</strong> and keep the audio effects.</li></ol>
+<h2>When the noise stays anyway</h2>
+<p>Cleanup has limits. If the noise is as loud as the voice, no setting will save the recording. Fix it at the source: mic closer to the mouth, quieter room, fan off. <a href="/en/guides/improve-interview-audio-premiere-pro/">How to improve interview audio in Premiere Pro</a> covers the rest of the audio chain.</p>
+<h2>With Auto-dérush</h2>
+<p>Auto-dérush does not clean audio. What it does is measure the background noise and the voice level with &quot;Analyze selection&quot;, then suggest a dB threshold for cutting silences. If the voice and the noise are too close, the panel tells you. That is a good sign you should clean the audio before cutting. To pick the threshold by hand, see <a href="/en/guides/choose-silence-threshold-db/">What dB threshold should you use</a>.</p>
+<h2>What to remember</h2>
+<ul><li>Identify the type of noise before adjusting anything.</li><li>Essential Sound for speed, DeNoise for fine tuning.</li><li>Raise sliders in small steps and listen on headphones.</li><li>Noise that loud is a recording problem, not an editing one.</li></ul>
+<div class="cta"><h2>Do it in one click</h2><p>Auto-dérush cuts the silences from your footage in Premiere Pro, keeps video and mic in sync, and edits multicam podcasts.</p><a class="btn" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Start your 7-day free trial</a><p class="trial">Then €9 a month, cancel anytime.</p></div>
+<section class="related"><h2>Read next</h2><div class="cards"><a class="card" href="/en/guides/remove-silences-premiere-pro/"><h3>How to remove silences in Premiere Pro: the manual way and the automatic way</h3><p>How to cut the silences out of footage in Premiere Pro: by hand with Add Edit and Ripple Delete, or in one click with Auto-dérush.</p></a><a class="card" href="/en/guides/edit-an-interview-fast/"><h3>How to edit an interview fast in Premiere Pro</h3><p>A 4-step method to go from a raw interview to a clean first cut, by automatically removing silences and hesitations.</p></a><a class="card" href="/en/guides/choose-silence-threshold-db/"><h3>What dB threshold should you use to detect silences?</h3><p>Background noise, voice level, detection threshold: how to set the decibel threshold to cut silences without clipping words.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro is a trademark of Adobe, not affiliated with this product.<br><span class="legal"><a href="/en/legal-notice/">Legal notice</a> · <a href="/en/terms/">Subscription and usage terms</a></span></div></footer>
+</body>
+</html>

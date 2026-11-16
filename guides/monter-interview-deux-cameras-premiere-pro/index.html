@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monter une interview à deux caméras dans Premiere Pro | Auto-dérush</title>
+<meta name="description" content="Champ et contrechamp : synchroniser deux caméras, basculer de l'une à l'autre et finir proprement une interview dans Premiere Pro, étape par étape.">
+<link rel="canonical" href="https://auto-derush.github.io/guides/monter-interview-deux-cameras-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/monter-interview-deux-cameras-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/edit-two-camera-interview-premiere-pro/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/edit-two-camera-interview-premiere-pro/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Monter une interview à deux caméras dans Premiere Pro | Auto-dérush">
+<meta property="og:description" content="Champ et contrechamp : synchroniser deux caméras, basculer de l'une à l'autre et finir proprement une interview dans Premiere Pro, étape par étape.">
+<meta property="og:url" content="https://auto-derush.github.io/guides/monter-interview-deux-cameras-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Monter une interview à deux caméras dans Premiere Pro","description":"Champ et contrechamp : synchroniser deux caméras, basculer de l'une à l'autre et finir proprement une interview dans Premiere Pro, étape par étape.","inLanguage":"fr","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-11-16","mainEntityOfPage":"https://auto-derush.github.io/guides/monter-interview-deux-cameras-premiere-pro/"}</script>
+<script data-goatcounter="https://autoderush.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/">Auto-<span>dérush</span></a>
+  <nav><a href="/guides/">Guides</a><a class="lang" href="/en/guides/edit-two-camera-interview-premiere-pro/">English</a><a class="btn small" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Essayer</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/guides/">← Tous les guides</a>
+<h1>Monter une interview à deux caméras dans Premiere Pro</h1>
+<p class="meta">3 min de lecture</p>
+<p class="intro">Deux caméras, deux micros, une heure de rushes : le montage tient dans l'ordre des opérations. Voici la méthode qui évite de refaire le travail deux fois.</p>
+<h2>Préparer les rushes avant de toucher à la timeline</h2>
+<p>Rangez vos fichiers par caméra : un dossier « Cam A », un dossier « Cam B ». Gardez les noms clairs, vous les retrouverez dans la séquence.</p>
+<p>Vérifiez une chose avant tout : chaque caméra a-t-elle enregistré un son, même médiocre ? Ce son sert à synchroniser. Si une caméra n'a aucun son, il faudra un clap ou un repère visuel.</p>
+<aside class="tip">Conseil : gardez le micro externe de chaque intervenant sur sa propre piste. Vous pourrez baisser celui qui ne parle pas sans toucher à l'autre.</aside>
+<h2>Étape 1 : créer la séquence source multicaméra</h2>
+<ol><li>Dans le panneau Projet, sélectionnez les clips des deux caméras (et les fichiers audio externes, s'il y en a).</li><li>Clic droit, puis <strong>Create Multi-Camera Source Sequence</strong> (Créer une séquence source multicaméra).</li><li>Dans la fenêtre, choisissez <strong>Audio</strong> comme point de synchronisation. Premiere aligne les clips sur la forme d'onde.</li><li>Si vous avez un micro externe, choisissez-le comme piste audio de la séquence plutôt que le son des caméras.</li><li>Validez. Une séquence source apparaît dans le projet.</li></ol>
+<p>Glissez-la sur une nouvelle séquence. Écoutez le début, le milieu et la fin : une dérive de synchro se voit surtout sur les longues prises.</p>
+<h2>Étape 2 : basculer d'une caméra à l'autre</h2>
+<p>Activez la vue multicaméra dans le moniteur Programme. Vous voyez alors les deux angles en même temps.</p>
+<ol><li>Activez l'enregistrement des changements de caméra.</li><li>Lancez la lecture.</li><li>Appuyez sur <strong>1</strong> ou <strong>2</strong> (le numéro de la caméra) au moment où vous voulez changer d'angle.</li></ol>
+<p>Premiere découpe le clip à chaque pression. Vous pouvez aussi vous placer sur un point précis, couper avec <strong>Ctrl+K</strong>, puis changer d'angle sur la partie coupée.</p>
+<p>Règles simples de champ / contrechamp :</p>
+<ul><li>Montrez celui qui parle, sauf pour une réaction qui compte.</li><li>Changez de plan sur une respiration, une fin de phrase ou un changement de sujet, pas au milieu d'un mot.</li><li>Évitez les changements toutes les deux secondes : un plan tenu 5 à 10 secondes se lit mieux.</li><li>Gardez un plan large pour les moments où les deux parlent en même temps.</li></ul>
+<h2>Étape 3 : figer le montage, puis nettoyer</h2>
+<p>Quand les angles vous conviennent, faites un clic droit sur le clip multicaméra et utilisez <strong>Flatten</strong> (Aplatir). Chaque plan devient un clip normal. Vous pouvez alors ajuster un cadrage, une couleur ou une durée plan par plan.</p>
+<p>C'est à ce moment qu'on coupe les blancs. Le piège : supprimer un silence sur une seule piste décale le reste. Le guide sur la <a href="/guides/supprimer-avec-propagation-plusieurs-pistes/">suppression avec propagation sur plusieurs pistes</a> explique comment garder vidéo et micros alignés.</p>
+<p>Pensez au jump cut : si vous coupez un blanc au milieu d'un plan, l'image saute. Coupez de préférence là où l'angle change déjà.</p>
+<h2>Avec Auto-dérush</h2>
+<p>Sur une interview, deux étapes sont longues : choisir la caméra de celui qui parle, puis supprimer les blancs sans perdre la synchro. Le mode <strong>Montage multicam (podcast)</strong> d'Auto-dérush fait les deux. Il coupe les silences quand personne ne parle, puis affiche la caméra de celui qui parle, avec un plan d'ensemble quand plusieurs personnes parlent. Le son n'est jamais coupé.</p>
+<p>Depuis la version 1.4.0, il passe sur la caméra de celui qui va parler un peu avant qu'il parle. Les plans de réaction (la caméra de celui qui écoute) et la baisse des micros de ceux qui ne parlent pas sont des options. Il évite aussi le jump cut : un blanc coupé tombe sur un changement de plan. Le guide <a href="/guides/monter-un-podcast-multicam-premiere-pro/">monter un podcast multicam automatiquement</a> détaille les réglages.</p>
+<p>Une interview de 10 minutes est traitée en moins de 30 secondes. Auto-dérush ne détecte pas les « euh » ni les mauvaises prises : le choix des meilleures réponses reste votre travail.</p>
+<h2>Vérifications avant l'export</h2>
+<ul><li>Écoutez chaque raccord de plan : le son ne doit pas sauter.</li><li>Regardez les plans larges : les deux personnes sont-elles bien cadrées ?</li><li>Vérifiez que les pistes de musique ne sont pas décalées.</li><li>Passez la séquence en entier à vitesse normale, une fois.</li></ul>
+<div class="cta"><h2>Faites-le en un clic</h2><p>Auto-dérush coupe les blancs de vos rushs dans Premiere Pro, garde la vidéo et le micro synchronisés et monte vos podcasts multicam.</p><a class="btn" href="https://autoderush.lemonsqueezy.com/checkout/buy/dc08aa35-f028-4904-bbbd-138ec534821a?checkout[discount_code]=LANCEMENT">Essai gratuit de 7 jours</a><p class="trial">Puis 9 € par mois, sans engagement.</p></div>
+<section class="related"><h2>À lire aussi</h2><div class="cards"><a class="card" href="/guides/supprimer-les-blancs-premiere-pro/"><h3>Supprimer les blancs dans Premiere Pro : la méthode manuelle et la méthode automatique</h3><p>Comment couper les silences d'un rush dans Premiere Pro : à la main avec le cutter et la suppression avec propagation, ou en un clic avec Auto-dérush.</p></a><a class="card" href="/guides/derusher-une-interview-rapidement/"><h3>Dérusher une interview rapidement dans Premiere Pro</h3><p>Une méthode en 4 étapes pour passer d'une interview brute à un premier montage propre, en coupant automatiquement les silences et les hésitations.</p></a><a class="card" href="/guides/choisir-le-seuil-en-db/"><h3>Quel seuil en dB choisir pour détecter les silences ?</h3><p>Bruit de fond, niveau de voix, seuil de détection : comment régler le seuil en décibels pour couper les silences sans couper les mots.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro est une marque d'Adobe, sans lien avec ce produit.<br><span class="legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgv/">Conditions d'abonnement et d'utilisation</a></span></div></footer>
+</body>
+</html>

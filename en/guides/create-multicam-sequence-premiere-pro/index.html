@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multicam Premiere Pro Tutorial: Create a Sequence Step by Step | Auto-dérush</title>
+<meta name="description" content="Sync your cameras, build the multi-camera source sequence, cut live with keys 1 to 9, then flatten. Every step in Premiere Pro, with shortcuts.">
+<link rel="canonical" href="https://auto-derush.github.io/en/guides/create-multicam-sequence-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/creer-sequence-multicamera-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/create-multicam-sequence-premiere-pro/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/create-multicam-sequence-premiere-pro/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Multicam Premiere Pro Tutorial: Create a Sequence Step by Step | Auto-dérush">
+<meta property="og:description" content="Sync your cameras, build the multi-camera source sequence, cut live with keys 1 to 9, then flatten. Every step in Premiere Pro, with shortcuts.">
+<meta property="og:url" content="https://auto-derush.github.io/en/guides/create-multicam-sequence-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Multicam Premiere Pro Tutorial: Create a Sequence Step by Step","description":"Sync your cameras, build the multi-camera source sequence, cut live with keys 1 to 9, then flatten. Every step in Premiere Pro, with shortcuts.","inLanguage":"en","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-11-19","mainEntityOfPage":"https://auto-derush.github.io/en/guides/create-multicam-sequence-premiere-pro/"}</script>
+<script data-goatcounter="https://autoderush.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/?lang=en">Auto-<span>dérush</span></a>
+  <nav><a href="/en/guides/">Guides</a><a class="lang" href="/guides/creer-sequence-multicamera-premiere-pro/">Français</a><a class="btn small" href="https://monteur7.gumroad.com/l/nuyoi/LANCEMENT?wanted=true">Try it</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/en/guides/">← All guides</a>
+<h1>Multicam Premiere Pro Tutorial: Create a Sequence Step by Step</h1>
+<p class="meta">3 min read</p>
+<p class="intro">A multicam edit comes down to four moves: prepare the clips, build the source sequence, cut live, clean up. Here is the method, in order.</p>
+<h2>Before you start</h2>
+<p>Multicam only works well if the cameras recorded the same scene at the same time. Check three things:</p>
+<ul><li>Each camera has a clip (or a set of clips) in the project.</li><li>Every camera captured audio, even poor audio. It is your sync reference.</li><li>The cameras share the same frame rate, or close to it. Otherwise sync drifts over time.</li></ul>
+<aside class="tip">Put the clips of one shoot in their own bin, and name them by camera: Cam A, Cam B, Cam C. It saves time in the dialog box.</aside>
+<h2>1. Create the multi-camera source sequence</h2>
+<ol><li>In the Project panel, select all the clips from every camera.</li><li>Right-click, then <strong>Create Multi-Camera Source Sequence</strong>.</li><li>Name the sequence.</li><li>Choose the <strong>Synchronize Point</strong>: <strong>Audio</strong> if every camera has sound, which is the usual case. Otherwise use Timecode, a marker, or the In Point.</li><li>Click OK.</li></ol>
+<p>Premiere builds a source sequence with each camera on its own track, lined up on the audio. Open it and scrub through a few spots: lips should match the sound on every camera. If one camera is off, start again with another sync point. For more on fixing sync, see <a href="/en/guides/sync-audio-video-premiere-pro-no-clap/">Sync Audio and Video in Premiere Pro Without a Clap</a>.</p>
+<h2>2. Put the source sequence in a new sequence</h2>
+<ol><li>Create an empty sequence, or drag the source sequence onto the New Item icon.</li><li>Place the source sequence in it. If the clip is not recognized as multicam, right-click it, go to <strong>Multi-Camera</strong>, and enable it.</li><li>In the same menu, pick the starting camera.</li></ol>
+<p>Check which audio you are keeping. In the source sequence settings you chose what the sound follows: one camera, an external mic, or a mix. For an interview or a podcast, the external mic is nearly always the right choice.</p>
+<h2>3. Cut live</h2>
+<ol><li>In the Program Monitor, open the settings menu (the wrench) and choose <strong>Multi-Camera View</strong>. The cameras appear in a grid.</li><li>Play the sequence, then click the camera you want, or press keys <strong>1 to 9</strong>: the key matches the camera number.</li><li>To record your choices, turn on the multi-camera record button before you press play. Each switch creates a cut in the timeline.</li></ol>
+<p>You can also cut without recording: place the playhead, then press the camera number, even while stopped.</p>
+<aside class="tip">Do one full pass without stopping, mistakes included. Fixing afterwards is faster than hunting for the perfect shot at every cut.</aside>
+<h2>4. Fix and flatten</h2>
+<ul><li>To change a camera afterwards, put the playhead on the clip and press the new camera number, or right-click the clip, go to <strong>Multi-Camera</strong>, and pick the camera.</li><li>To move a cut, use the Rolling Edit tool (N) or the Ripple Edit tool (B), as on any clip.</li><li>When the edit is done, right-click the clips, go to <strong>Multi-Camera</strong>, then <strong>Flatten</strong>. You get regular clips, which are easier to color and export.</li></ul>
+<p>Save a copy of the project before you flatten: it is not always easy to undo once you have made other changes.</p>
+<h2>With Auto-dérush</h2>
+<p>Steps 1 and 2 stay manual. Step 3 is the slowest for a podcast or an interview. Auto-dérush's &quot;Montage multicam (podcast)&quot; mode cuts the silences when nobody is talking, then shows the camera of whoever is speaking, with a wide shot when several people talk at once. The audio is never cut. The idea is covered in <a href="/en/guides/edit-multicam-podcast-premiere-pro/">How to edit a multicam video podcast in Premiere Pro, automatically</a>.</p>
+<p>It does not replace your choice of cutaways or reaction shots: it does the first pass, you finish the job.</p>
+<div class="cta"><h2>Do it in one click</h2><p>Auto-dérush cuts the silences from your footage in Premiere Pro, keeps video and mic in sync, and edits multicam podcasts.</p><a class="btn" href="https://monteur7.gumroad.com/l/nuyoi/LANCEMENT?wanted=true">Start your 7-day free trial</a><p class="trial">Then €9 a month, cancel anytime.</p></div>
+<section class="related"><h2>Read next</h2><div class="cards"><a class="card" href="/en/guides/remove-silences-premiere-pro/"><h3>How to remove silences in Premiere Pro: the manual way and the automatic way</h3><p>How to cut the silences out of footage in Premiere Pro: by hand with Add Edit and Ripple Delete, or in one click with Auto-dérush.</p></a><a class="card" href="/en/guides/edit-an-interview-fast/"><h3>How to edit an interview fast in Premiere Pro</h3><p>A 4-step method to go from a raw interview to a clean first cut, by automatically removing silences and hesitations.</p></a><a class="card" href="/en/guides/choose-silence-threshold-db/"><h3>What dB threshold should you use to detect silences?</h3><p>Background noise, voice level, detection threshold: how to set the decibel threshold to cut silences without clipping words.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro is a trademark of Adobe, not affiliated with this product.<br><span class="legal"><a href="/en/legal-notice/">Legal notice</a> · <a href="/en/terms/">Subscription and usage terms</a></span></div></footer>
+</body>
+</html>

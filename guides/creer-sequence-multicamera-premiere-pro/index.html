@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multicam Premiere Pro tuto : créer une séquence pas à pas | Auto-dérush</title>
+<meta name="description" content="Synchroniser vos caméras, créer la séquence source multicaméra, couper en direct avec les touches 1 à 9 puis aplatir. Toutes les étapes, avec les raccourcis.">
+<link rel="canonical" href="https://auto-derush.github.io/guides/creer-sequence-multicamera-premiere-pro/">
+<link rel="alternate" hreflang="fr" href="https://auto-derush.github.io/guides/creer-sequence-multicamera-premiere-pro/">
+<link rel="alternate" hreflang="en" href="https://auto-derush.github.io/en/guides/create-multicam-sequence-premiere-pro/">
+<link rel="alternate" hreflang="x-default" href="https://auto-derush.github.io/en/guides/create-multicam-sequence-premiere-pro/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Multicam Premiere Pro tuto : créer une séquence pas à pas | Auto-dérush">
+<meta property="og:description" content="Synchroniser vos caméras, créer la séquence source multicaméra, couper en direct avec les touches 1 à 9 puis aplatir. Toutes les étapes, avec les raccourcis.">
+<meta property="og:url" content="https://auto-derush.github.io/guides/creer-sequence-multicamera-premiere-pro/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guides.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Multicam Premiere Pro tuto : créer une séquence pas à pas","description":"Synchroniser vos caméras, créer la séquence source multicaméra, couper en direct avec les touches 1 à 9 puis aplatir. Toutes les étapes, avec les raccourcis.","inLanguage":"fr","author":{"@type":"Organization","name":"Auto-dérush","url":"https://auto-derush.github.io"},"datePublished":"2026-11-19","mainEntityOfPage":"https://auto-derush.github.io/guides/creer-sequence-multicamera-premiere-pro/"}</script>
+<script data-goatcounter="https://autoderush.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap"><header>
+  <a class="logo" href="/">Auto-<span>dérush</span></a>
+  <nav><a href="/guides/">Guides</a><a class="lang" href="/en/guides/create-multicam-sequence-premiere-pro/">English</a><a class="btn small" href="https://monteur7.gumroad.com/l/nuyoi/LANCEMENT?wanted=true">Essayer</a></nav>
+</header></div>
+<main class="wrap article">
+<a class="back" href="/guides/">← Tous les guides</a>
+<h1>Multicam Premiere Pro tuto : créer une séquence pas à pas</h1>
+<p class="meta">3 min de lecture</p>
+<p class="intro">Un montage multicam tient en quatre gestes : préparer les clips, créer la séquence source, couper en direct, nettoyer. Voici la méthode, dans l'ordre.</p>
+<h2>Avant de commencer</h2>
+<p>Le multicam ne marche bien que si les caméras ont enregistré la même scène en même temps. Vérifiez trois choses :</p>
+<ul><li>Chaque caméra a un clip (ou une série de clips) dans le projet.</li><li>Toutes les caméras ont capté le son, même un son de mauvaise qualité : il sert de repère de synchro.</li><li>Les caméras ont la même cadence d'images, ou presque. Sinon, la synchro dérive sur la durée.</li></ul>
+<aside class="tip">Rangez les clips d'un même plan dans un chutier dédié, avec un nom par caméra : Cam A, Cam B, Cam C. Vous gagnerez du temps dans la boîte de dialogue.</aside>
+<h2>1. Créer la séquence source multicaméra</h2>
+<ol><li>Dans le panneau Projet, sélectionnez tous les clips des différentes caméras.</li><li>Clic droit, puis <strong>Créer une séquence source multicaméra</strong> (Create Multi-Camera Source Sequence).</li><li>Donnez un nom à la séquence.</li><li>Choisissez le <strong>point de synchronisation</strong> : <strong>Audio</strong> si vous avez du son sur toutes les caméras, ce qui est le cas le plus courant. Sinon, utilisez le timecode, un marqueur ou le point d'entrée.</li><li>Validez avec OK.</li></ol>
+<p>Premiere crée une séquence source qui contient chaque caméra sur sa propre piste, alignée sur le son. Ouvrez-la et passez le curseur sur quelques points de la timeline : les lèvres doivent coller au son sur toutes les caméras. Si une caméra est décalée, recommencez avec un autre point de synchronisation. Pour le détail du recalage, voir <a href="/guides/synchroniser-audio-video-premiere-pro/">Synchroniser audio et vidéo dans Premiere Pro, sans clap</a>.</p>
+<h2>2. Poser la séquence source dans une nouvelle séquence</h2>
+<ol><li>Créez une séquence vide, ou glissez la séquence source sur l'icône de nouvelle séquence.</li><li>Placez-y la séquence source. Si le clip n'est pas reconnu comme multicam, clic droit sur le clip, <strong>Multicaméra</strong> (Multi-Camera), puis activez-le.</li><li>Choisissez dans la même option la caméra de départ.</li></ol>
+<p>Vérifiez sur la piste audio que vous gardez le bon micro. Dans les réglages de la séquence source, vous avez choisi quel son suit : une seule caméra, un micro externe ou le mélange. Pour une interview ou un podcast, le micro externe est presque toujours le bon choix.</p>
+<h2>3. Couper en direct</h2>
+<ol><li>Dans le moniteur de programme, ouvrez le menu des réglages (la clé à molette) et choisissez <strong>Affichage multicaméra</strong> (Multi-Camera View). Les caméras s'affichent en grille.</li><li>Lancez la lecture, puis cliquez sur la caméra voulue, ou appuyez sur les touches <strong>1 à 9</strong> : la touche correspond à la caméra.</li><li>Pour enregistrer vos choix, activez le bouton d'enregistrement multicam avant de lancer la lecture. Chaque changement crée une coupe dans la timeline.</li></ol>
+<p>Vous pouvez aussi couper sans enregistrer : placez la tête de lecture, puis appuyez sur le numéro de la caméra, même à l'arrêt.</p>
+<aside class="tip">Faites un premier passage en entier, sans vous arrêter, même avec des erreurs. Corriger ensuite est plus rapide que de chercher le plan parfait à chaque coupe.</aside>
+<h2>4. Corriger et aplatir</h2>
+<ul><li>Pour changer une caméra après coup, placez la tête de lecture sur le clip, puis appuyez sur le numéro de la nouvelle caméra, ou faites un clic droit sur le clip, <strong>Multicaméra</strong>, puis la caméra voulue.</li><li>Pour déplacer une coupe, utilisez l'outil Édition par ondulation (B) ou l'outil Roulement (N), comme sur n'importe quel clip.</li><li>Quand le montage est fini, clic droit sur les clips, <strong>Multicaméra</strong>, puis <strong>Aplatir</strong> (Flatten). Vous retrouvez des clips normaux, plus faciles à étalonner et à exporter.</li></ul>
+<p>Avant d'aplatir, enregistrez une copie du projet : l'opération ne se défait pas toujours proprement une fois d'autres modifications faites.</p>
+<h2>Avec Auto-dérush</h2>
+<p>Les étapes 1 et 2 restent manuelles. L'étape 3 est la plus longue pour un podcast ou une interview. Le mode « Montage multicam (podcast) » d'Auto-dérush coupe les silences quand personne ne parle, puis affiche la caméra de celui qui parle, avec un plan d'ensemble quand plusieurs personnes parlent. Le son n'est jamais coupé. Le principe est détaillé dans <a href="/guides/monter-un-podcast-multicam-premiere-pro/">Monter un podcast vidéo multicam dans Premiere Pro, automatiquement</a>.</p>
+<p>Pour un tournage de ce type, le plugin ne remplace pas votre choix des plans d'ambiance ou de réaction : il fait le premier passage, vous finissez.</p>
+<div class="cta"><h2>Faites-le en un clic</h2><p>Auto-dérush coupe les blancs de vos rushs dans Premiere Pro, garde la vidéo et le micro synchronisés et monte vos podcasts multicam.</p><a class="btn" href="https://monteur7.gumroad.com/l/nuyoi/LANCEMENT?wanted=true">Essai gratuit de 7 jours</a><p class="trial">Puis 9 € par mois, sans engagement.</p></div>
+<section class="related"><h2>À lire aussi</h2><div class="cards"><a class="card" href="/guides/supprimer-les-blancs-premiere-pro/"><h3>Supprimer les blancs dans Premiere Pro : la méthode manuelle et la méthode automatique</h3><p>Comment couper les silences d'un rush dans Premiere Pro : à la main avec le cutter et la suppression avec propagation, ou en un clic avec Auto-dérush.</p></a><a class="card" href="/guides/derusher-une-interview-rapidement/"><h3>Dérusher une interview rapidement dans Premiere Pro</h3><p>Une méthode en 4 étapes pour passer d'une interview brute à un premier montage propre, en coupant automatiquement les silences et les hésitations.</p></a><a class="card" href="/guides/choisir-le-seuil-en-db/"><h3>Quel seuil en dB choisir pour détecter les silences ?</h3><p>Bruit de fond, niveau de voix, seuil de détection : comment régler le seuil en décibels pour couper les silences sans couper les mots.</p></a></div></section>
+</main>
+<footer><div class="wrap">© 2026 Auto-dérush. Premiere Pro est une marque d'Adobe, sans lien avec ce produit.<br><span class="legal"><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgv/">Conditions d'abonnement et d'utilisation</a></span></div></footer>
+</body>
+</html>
